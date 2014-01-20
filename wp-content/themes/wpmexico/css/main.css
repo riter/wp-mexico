@@ -182,17 +182,19 @@ header .head .rightHead .boxSearch button{
 .postRelacionados ul li.last{
 		margin:0px;
 }
-.postRelacionados ul li a.thumb{
+.postRelacionados ul li a.first{
 	display: block;
 	margin: 0px;
 }
-.postRelacionados ul li h4{
+/*.postRelacionados ul li h4{
 	padding: 0px 5px;
-}
-.postRelacionados ul li h4 a{
+}*/
+.postRelacionados ul li a:last-child{
     color: #838383;
     font-family: Chivo;
     font-size: 12px;
+    padding: 0px 5px;
+    display: block;
 }
 /* ASIDE */
 aside{

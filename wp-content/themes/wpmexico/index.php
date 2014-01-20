@@ -52,7 +52,10 @@ get_header(); ?>
                 </div>
             </div>
             <div class="postRelacionados">
-                <ul>
+
+                <?php wp_related_posts()?>
+
+                <!--<ul>
                     <li>
                         <a href="#" title="thumb" class="thumb"><img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" alt="thumb" /></a>
                         <h4>
@@ -77,6 +80,7 @@ get_header(); ?>
                             </a>
                         </h4>
                     </li>
+
                     <li class="last">
                         <a href="#" title="thumb"><img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" alt="thumb" /></a>
                         <h4>
@@ -85,7 +89,7 @@ get_header(); ?>
                             </a>
                         </h4>
                     </li>
-                </ul>
+                </ul>-->
             </div>
             <div class="boxComentarios">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/comentarios.jpg" alt="comentarios" />

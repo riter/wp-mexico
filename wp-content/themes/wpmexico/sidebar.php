@@ -33,7 +33,11 @@
             </div>
         </div>
         <div class="boxAside boxTemasImportantes">
-            <h3>Temas importantes</h3>
+            <?php if ( is_active_sidebar('sidebar-importantes') ) {
+                dynamic_sidebar('sidebar-importantes');
+            } ?>
+
+            <!--<h3>Temas importantes</h3>
             <ul>
                 <li><a href="#" title="">Educación en México</a></li>
                 <li><a href="#" title="">Innovación</a></li>
@@ -49,15 +53,23 @@
                 <li><a href="#" title="">Compras de fin de año</a></li>
                 <li><a href="#" title="">Entrevistas</a></li>
                 <li><a href="#" title="">Teléfonos inteligentes</a></li>
-            </ul>
+            </ul>-->
         </div>
         <div class="boxAside boxJournalRecomienda">
             <h3>Journal Recomienda</h3>
             <section>
                 <div class="thumb">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/recomienda.png" alt=""/>
+                    <?php
+                    $postsincat = get_posts(array("cat" => 19, "showposts" => 1));
+                    $idoflatestpostincategory = $postsincat[0]->ID;
+                    //print_r($postsincat[0]);
+                    ?>
+                    <!--<img src="<?php echo get_template_directory_uri(); ?>/images/recomienda.png" alt=""/>-->
+
+                    <?php echo get_the_post_thumbnail($postsincat[0]->ID) ?>
                 </div>
-                <h4><a href="#" title="Ensalada César de la mano de Enrique Olvera">Ensalada César de la mano de Enrique Olvera</a></h4>
+                <!--<h4><a href="#" title="Ensalada César de la mano de Enrique Olvera">Ensalada César de la mano de Enrique Olvera</a></h4>-->
+                <h4><a href="#" title="<?php echo $postsincat[0]->post_title?>"><?php echo $postsincat[0]->post_title?></a></h4>
             </section>
         </div>
         <div class="banner-2 boxAside banner">

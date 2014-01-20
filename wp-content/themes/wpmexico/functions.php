@@ -198,7 +198,20 @@ function twentyfourteen_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
 }
+function mi_plugin_temas_importantes(){
+    register_sidebar( array(
+        'name'          => __( 'Siderbar Temas Importantes', 'wp-mexico' ),
+        'id'            => 'sidebar-importantes',
+        'description'   => __( 'temas importantes', 'wp-mexico' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
+}
+add_action('widgets_init','mi_plugin_temas_importantes');
 add_action( 'widgets_init', 'twentyfourteen_widgets_init' );
 
 /**
