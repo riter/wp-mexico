@@ -1,0 +1,320 @@
+
+/*-----------------------------------------
+  				HOME PAGE
+ ------------------------------------------*/
+.content{
+    width: 1216px;
+    margin: 0px auto;
+}
+/*---------------------- 
+  HEADER
+------------------------*/
+header{
+    overflow: hidden;
+    padding: 21px 0 0;
+}
+header .logo {
+	width: 373px;
+	float: left;
+}
+header .logo a{
+    display: block;
+}
+header .head .rightHead{
+	float: right;
+}
+header .head .rightHead .bannerHead{
+	overflow: hidden;
+	margin: 3px 0px 30px;
+}
+header .head .rightHead .boxSearch{
+    display: inline-block;
+    float: right;
+}
+header .head .rightHead .boxSearch input{
+    background: url("../images/search.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    font-family: georgia;
+    font-size: 16px;
+    font-style: italic;
+    height: 28px;
+    padding: 0 0 0 10px;
+    width: 210px;
+    color: #cbc8c0;
+}
+header .head .rightHead .boxSearch button{
+	float: left;
+	cursor: pointer;
+	display: block;
+	border: none;
+	background: url("../images/search.jpg") no-repeat scroll right top transparent;
+	height: 28px;
+	width: 30px;
+	text-indent: -9999px;
+}
+#bottom{
+    background-color: #FFFFFF;
+    height: 24px;
+    padding: 10px 0 0;
+}
+#bottom #menu{
+
+}
+#bottom #menu nav {
+
+}
+#bottom #menu#bottom #menu nav ul{
+
+}
+#bottom #menu nav ul li{
+	float: left;
+	margin: 0px 25px 0px 0px;
+}
+#bottom #menu nav ul li a{
+    color: #7A7A7A;
+    font-family: Varela;
+    font-size: 11px;
+    padding: 0 5px 3px;
+    text-transform: uppercase;
+}
+#bottom #menu nav ul li a:hover, #bottom #menu nav ul li.active a{
+	border-bottom: 3px solid #378433;
+}
+
+#bottom .networks{
+	overflow: hidden;
+	float: right;
+}
+#bottom .networks a{
+	display: inline-block;
+	margin: 0px 0px 0px 6px
+	float: left;
+}
+/*------------------------ MAIN CONTENT -------------------------------*/
+#content{
+	overflow: hidden;
+}
+/* BODY */
+#body{
+	width: 858px;
+	float: left;
+	padding: 0px 36px 0px 0px
+}
+.postDetalle{
+    overflow: hidden;
+    padding: 50px 0 0 60px;
+}
+.postDetalle h2.title{
+    border-bottom: 1px solid #838383;
+    color: #838383;
+    font-size: 50px;
+    line-height: 56px;
+    padding: 0 0 10px;
+    margin: 0px 0px 30px;
+    font-family: Chivo;
+}
+.postDetalle .boxDetalle{
+    overflow: hidden;
+    margin: 0px 0px 30px;
+}
+.postDetalle .boxDetalle .left{
+    float: left;
+    padding: 0 10px 0 0;
+    text-align: center;
+    width: 95px;
+}
+.postDetalle .boxDetalle .left .autor{
+    margin: 0px 0px 20px;
+}
+.postDetalle .boxDetalle .right{
+    float: left;
+    width: 690px;
+    border-bottom: 1px solid #838383;
+}
+.postDetalle .boxDetalle .right p .video{
+
+}
+.postDetalle .boxDetalle .right .data{
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+.postDetalle .boxDetalle .right .data .hTop{
+ 	overflow: hidden;
+}
+.postDetalle .boxDetalle .right .data .hTop .name{
+ 	float: left;
+ 	padding: 0px 20px 0px 0px;
+ 	font-size: 18px;
+ 	color: #838383;
+}
+.postDetalle .boxDetalle .right .data .date{
+ 	font-size: 12px;
+ 	color: #838383;
+}
+.postDetalle .boxDetalle .right .data .hTop .redes{
+    display: inline-block;
+    float: left;
+    padding: 4px 0 0;
+}
+.postDetalle .boxDetalle .right .text p{
+    font-family: Varela;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 20px;
+}
+.postRelacionados{
+    overflow: hidden;
+    padding: 0 0 30px 0px;
+    border-bottom: 1px solid #838383;
+    margin: 0px 0px 10px 105px;
+}
+.postRelacionados ul{
+	overflow: hidden;
+}
+.postRelacionados ul li{
+		float: left;
+		width: 144px;
+		background-color: #fff;
+		margin: 0px 38px 0px 0px;
+		height: 185px;
+}
+.postRelacionados ul li.last{
+		margin:0px;
+}
+.postRelacionados ul li a.thumb{
+	display: block;
+	margin: 0px;
+}
+.postRelacionados ul li h4{
+	padding: 0px 5px;
+}
+.postRelacionados ul li h4 a{
+    color: #838383;
+    font-family: Chivo;
+    font-size: 12px;
+}
+/* ASIDE */
+aside{
+	background-color: #4c4b4b;
+	width: 300px;
+	float: left;
+	padding: 23px 11px;
+}
+.boxAside{
+	margin: 0px 0px 30px 0px;
+	overflow: hidden;
+}
+.boxAside h3{
+    border-bottom: 1px solid #E3E0D6;
+    color: #E3E0D6;
+    font-family: Varela;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 15px;
+    padding: 0 0 6px 22px;
+}
+.boxMantenteInformado .formSub{
+	overflow: hidden;
+}
+.boxMantenteInformado .formSub .input{
+	margin: 0px 0px 20px;
+}
+.boxMantenteInformado .formSub .grupo-radio{
+    display: inline-block;
+    float: left;
+    padding: 0 0 0 10px;
+}
+.boxMantenteInformado .formSub .grupo-radio label{
+	font-size: 15px;
+	color: #e3e0d6;
+	padding: 0px 0px 0px 5px;
+}
+.boxMantenteInformado .formSub .send{
+   float: right;
+    margin: 15px 50px 0 0;
+}
+.boxMantenteInformado .formSub .send button{
+    background: url("../images/btnSub.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 31px;
+    text-indent: -99999px;
+    width: 92px;
+}
+.boxMantenteInformado .formSub .input input{
+   background: url("../images/input.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    height: 26px;
+    width: 289px;
+    padding: 0px 0px 0px 10px;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 12px;
+    color: #c1c1c1;
+}
+.boxTemasImportantes ul li{
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+.boxTemasImportantes ul li a{
+	font-size: 12px;
+	color: #e3e0d6;
+}
+.boxJournalRecomienda .thumb{
+	float: left;
+	width: 144px;
+}
+.boxJournalRecomienda h4{
+    float: left;
+    line-height: 26px;
+    padding: 0 0 0 10px;
+    width: 140px;
+}
+.boxJournalRecomienda h4 a{
+	color: #e3e0d6;
+	font-size: 19px;
+    font-family: Chivo;
+
+}
+/*------------------------ footer -------------------------------*/
+footer{
+   	height: 328px;
+   	background-color: #272727;
+   	padding: 33px 0px 0px;
+}
+footer .foot .logoFoot{
+    margin: 0px 0px 48px;
+    overflow: hidden;
+}
+footer .foot .bottom{
+    overflow: hidden;
+}
+footer .foot .bottom .left{
+    float: left;
+}
+footer .foot .bottom .left ul li a{
+    font-size: 14px;
+    color: #838383;
+}
+footer .foot .bottom .right{
+     float: right;
+     display: inline-block;
+}
+footer .foot .bottom .right .section{
+    float: left;
+    display: inline-block;
+    margin: 0px 0px 0px 27px;
+}
+footer .foot .bottom .right .section.first{
+    margin: 0px;
+}
+footer .foot .bottom .right .section h3 a{
+     font-size: 11px;
+    color: #fff;  
+}
+footer .foot .bottom .right .section ul li a{
+    font-size: 10px;
+    color: #838383;
+}

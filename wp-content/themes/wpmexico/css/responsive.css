@@ -1,0 +1,32 @@
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* iPads (portrait) (HASTA 800PX y 768PX COLOR AZUL)  ----------- */
+@media only screen and (max-width : 800px) {
+    body{
+        background-color: blue;
+    }
+
+}
+
+/* Smartphones (portrait) (HASTA 568PX IPHONE 5 y tablet 7 pulgadas)----------- */
+@media only screen and (max-width : 568px) {
+    body{
+        background-color: black;
+    }
+}
+/* Smartphones (landscape) (HASTA 480PX COLOR ROJO)----------- */
+@media only screen and (max-width : 480px) {
+    body{
+        background-color: red;
+    }
+}
+
+/* Smartphones (portrait) (HASTA 320PX COLOR NEGRO)----------- */
+@media only screen and (max-width : 320px) {
+    body{
+        background-color: green;
+    }
+}
