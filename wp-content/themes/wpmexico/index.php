@@ -19,7 +19,9 @@ get_header(); ?>
 <section id="content" class="content">
     <div id="body">
         <div class="postDetalle">
-            <h2 class="title">Dos a&ntilde;os de trabajo y un resultado invisible</h2>
+            <!-- contenido Index-->
+
+            <!--<h2 class="title">Dos a&ntilde;os de trabajo y un resultado invisible</h2>
             <div class="boxDetalle">
                 <div class="left">
                     <div class="autor"><img src="<?php echo get_template_directory_uri(); ?>/images/autor.png" alt="autor" /></div>
@@ -90,16 +92,20 @@ get_header(); ?>
                         </h4>
                     </li>
                 </ul>-->
-            </div>
+            <!--</div>
             <div class="boxComentarios">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/comentarios.jpg" alt="comentarios" />
-            </div>
+            </div>-->
         </div>
     </div>
 
 	<?php get_sidebar( 'content' ); ?>
 
+<?php
+    get_sidebar();
+?>
+
+</section>
 
 <?php
-get_sidebar();
-get_footer();
+    get_footer();
