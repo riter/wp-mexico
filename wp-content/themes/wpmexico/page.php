@@ -24,6 +24,7 @@ get_header(); ?>
 ?>
     <div class="postDetalle">
         <div id="primary" class="content-area">
+
             <div id="content" class="site-content" role="main">
 
                 <?php

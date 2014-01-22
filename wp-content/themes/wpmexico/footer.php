@@ -34,7 +34,7 @@
                     $first=1;
                     $categories = get_categories($arg);
                     foreach($categories as $category) {
-                        if(!$category->parent) {  ?>
+                        if(!$category->parent && $category->term_id!=19) {  ?>
                         <div class="section <?php echo $first==1?'first':''; $first++;?>">
                             <h3><a href="<?php  echo get_category_link( $category->term_id ) ?>" ><?php echo $category->name ?></a></h3>
                         </div>

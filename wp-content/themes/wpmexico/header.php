@@ -44,8 +44,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
 
+    <!-- Masonry-->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/masonry.js"></script>
+
     <!-- MENU RESPONSIVO -->
-    <script src="js/tinynav.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/tinynav.js"></script>
     <style>
         /* styles for desktop */
         .tinynav { display: none; }
@@ -60,6 +63,8 @@
             }
             #menu nav ul { display: none }
         }
+        .item { width: 25%; }
+        .item.w2 { width: 50%; }
     </style>
     <script>
         $(function () {
@@ -69,6 +74,7 @@
             });
 
         });
+
     </script>
 </head>
 
@@ -111,7 +117,7 @@
                         );
                         $categories = get_categories($arg);
                         foreach($categories as $category) {
-                            if(!$category->parent) {  ?>
+                            if(!$category->parent && $category->term_id!=19) {  ?>
                                 <li><a href="<?php  echo get_category_link( $category->term_id ) ?>" ><?php echo $category->name ?></a></li>
                         <?php
                             }

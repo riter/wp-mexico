@@ -16,94 +16,66 @@
 
 get_header(); ?>
 
+    <style>
+        .masonry {
+            background: #EEE;
+            max-width: 640px;
+        }
+
+        .masonry .item {
+            width:  60px;
+            height: 60px;
+            float: left;
+            background: #D26;
+            border: 2px solid #333;
+            border-color: hsla(0, 0%, 0%, 0.5);
+            border-radius: 5px;
+        }
+
+        .item.w2 { width:  120px; }
+        .item.w3 { width:  180px; }
+        .item.w4 { width:  240px; }
+
+        .item.h2 { height: 100px; }
+        .item.h3 { height: 130px; }
+        .item.h4 { height: 180px; }
+
+    </style>
+
 <section id="content" class="content">
     <div id="body">
         <div class="postDetalle">
-            <!-- contenido Index-->
-
-            <!--<h2 class="title">Dos a&ntilde;os de trabajo y un resultado invisible</h2>
-            <div class="boxDetalle">
-                <div class="left">
-                    <div class="autor"><img src="<?php echo get_template_directory_uri(); ?>/images/autor.png" alt="autor" /></div>
-                    <div class="shareThis"><img src="<?php echo get_template_directory_uri(); ?>/images/share.png" alt="autor" /></div>
-                </div>
-                <div class="right">
-                    <div class="data">
-                        <div class="hTop">
-                            <span class="name">@nombredeautor</span>
-                            <div class="redes">
-                                <a href="#" title="Rss"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.jpg" alt="Rss" /></a>
-                                <a href="#" title="Facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.jpg" alt="Facebook" /></a>
-                                <a href="#" title="Twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.jpg" alt="twitter" /></a>
-                            </div>
-                        </div>
-                        <span class="date">Lunes 3, Diciembre.</span>
-                    </div>
-                    <div class="text">
-                        <p>
-                            Nos falta, seguramente, intervenir menos para generar mas. Por suerte, esa tendencia a pasar de puntillas sobre un rincon determinado de la geografia urbana y recuperarlo sin fanfarria ni orquesta aun late de vez en cuando lo suficiente para que uno no sea del todo pesimistas. El caso de la recuperacion del Turo de la Rovira, en Barcelona, es uno de esos pr oyectos que reconfortan. Mucho. Se trata de un cerro que se alza en plena ciudad a 260 metros sobre el nivel del mar, un espectacular mirador panoramico con vistas a 360 grados y que, por fortuna para los vecinos, siempre ha quedado apartado de las rutas turisticas barcelonesas.
-                        </p>
-                        <p><img src="<?php echo get_template_directory_uri(); ?>/images/img-1.jpg" alt="img" /></p>
-                        <p>
-                            Nos falta, seguramente, intervenir menos para generar mas. Por suerte, esa tendencia a pasar de puntillas sobre un rincon determinado de la geografia urbana y recuperarlo sin fanfarria ni orquesta aun late de vez en cuando lo suficiente para que uno no sea del todo pesimistas. El caso de la recuperacion del Turo de la Rovira, en Barcelona, es uno de esos pr oyectos que reconfortan. Mucho. Se trata de un cerro que se alza en plena ciudad a 260 metros sobre el nivel del mar, un espectacular mirador panoramico con vistas a 360 grados y que, por fortuna para los vecinos, siempre ha quedado apartado de las rutas turisticas barcelonesas.
-                        </p>
-                        <p>
-                            Nos falta, seguramente, intervenir menos para generar mas. Por suerte, esa tendencia a pasar de puntillas sobre un rincon determinado de la geografia urbana y recuperarlo sin fanfarria ni orquesta aun late de vez en cuando lo suficiente para que uno no sea del todo pesimistas. El caso de la recuperacion del Turo de la Rovira, en Barcelona, es uno de esos pr oyectos que reconfortan. Mucho. Se trata de un cerro que se alza en plena ciudad a 260 metros sobre el nivel del mar, un espectacular mirador panoramico con vistas a 360 grados y que, por fortuna para los vecinos, siempre ha quedado apartado de las rutas turisticas barcelonesas.
-                        </p>
-                    </div>
-                </div>
+            <h2 class='title'>Masonry - columnWidth</h2>
+            <div class="masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
+                <div class="item"></div>
+                <div class="item w2 h2"></div>
+                <div class="item h3"></div>
+                <div class="item h2"></div>
+                <div class="item w3"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h2"></div>
+                <div class="item w2 h3"></div>
+                <div class="item"></div>
+                <div class="item h2"></div>
+                <div class="item"></div>
+                <div class="item w2 h2"></div>
+                <div class="item w2"></div>
+                <div class="item"></div>
+                <div class="item h2"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h3"></div>
+                <div class="item h2"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item h2"></div>
             </div>
-            <div class="postRelacionados">
-
-                <?php wp_related_posts()?>
-
-                <!--<ul>
-                    <li>
-                        <a href="#" title="thumb" class="thumb"><img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" alt="thumb" /></a>
-                        <h4>
-                            <a href="#" title="Mandela, la historia del padre de la Sudafrica moderna">
-                                Mandela, la historia del padre de la Sudafrica moderna
-                            </a>
-                        </h4>
-                    </li>
-                    <li>
-                        <a href="#" title="thumb"><img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" alt="thumb" /></a>
-                        <h4>
-                            <a href="#" title="Mandela, la historia del padre de la Sudafrica moderna">
-                                Mandela, la historia del padre de la Sudafrica moderna
-                            </a>
-                        </h4>
-                    </li>
-                    <li>
-                        <a href="#" title="thumb"><img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" alt="thumb" /></a>
-                        <h4>
-                            <a href="#" title="Mandela, la historia del padre de la Sudafrica moderna">
-                                Mandela, la historia del padre de la Sudafrica moderna
-                            </a>
-                        </h4>
-                    </li>
-
-                    <li class="last">
-                        <a href="#" title="thumb"><img src="<?php echo get_template_directory_uri(); ?>/images/thumb-1.jpg" alt="thumb" /></a>
-                        <h4>
-                            <a href="#" title="Mandela, la historia del padre de la Sudafrica moderna">
-                                Mandela, la historia del padre de la Sudafrica moderna
-                            </a>
-                        </h4>
-                    </li>
-                </ul>-->
-            <!--</div>
-            <div class="boxComentarios">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/comentarios.jpg" alt="comentarios" />
-            </div>-->
         </div>
     </div>
-
-	<?php get_sidebar( 'content' ); ?>
-
-<?php
-    get_sidebar();
-?>
+	<?php get_sidebar( 'content' );
+        get_sidebar();
+    ?>
 
 </section>
 

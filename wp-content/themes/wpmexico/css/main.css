@@ -320,3 +320,10 @@ footer .foot .bottom .right .section ul li a{
     font-size: 10px;
     color: #838383;
 }
+
+/*nuevos*/
+.autor > img{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
