@@ -1,32 +1,171 @@
-
 img{
     max-width: 100%;
     height: auto;
 }
+@media only screen and (max-width : 1024px) {
+    .content{
+        padding: 0px 1% 0;
+        width: 98%;
+    }
+    header.content {
+        padding: 21px 1% 0px;
+    }
+    header .logo {
+        width: 250px;
+    }
+    header .head .rightHead .bannerHead {
+        width: 700px;
+    }
+    #bottom .networks {
+        display: none;
+    }
+    #bottom #menu nav ul li a {
+        padding: 0 1px 5px;
+    }
+    #body {
+        width: 64%;
+    }
+    aside {
+        width: 30%;
+    }
+    .postDetalle .boxDetalle .left {
+        padding: 0 20px 0 0;
+        width: 12%;
+    }
+    .postDetalle .boxDetalle .right {
+        padding:0px;
+        width: 84%;
+    }
+    /* FOOTER */
+    footer{
+        padding: 20px 0px 10px;
+        overflow: hidden;
+    }
+    footer .foot .logoFoot {
+        padding: 0 0 10px;
+        text-align: center;
+    }
+    footer .foot .logoFoot{
+        text-align: center;
+    }
+    footer .foot .bottom .left {
+        float: none;
+        padding: 0px 0px 10px;
+    }
+    footer .foot .bottom .left ul li{
+        margin: 0px 0px 0px 4%;
+        display: inline;
+    }
+    footer .foot .bottom .left ul{
+        text-align: center;
+    }
+    footer .foot .bottom .right {
+        display: inline-block;
+        float: none;
+        padding: 0 0 0 45px;
+    }
+}
 /* iPads (portrait) (HASTA 800PX y 768PX COLOR AZUL)  ----------- */
 @media only screen and (max-width : 800px) {
-    body{
-        background-color: blue;
+    header .logo {
+        width: 218px;
     }
-
+    header .head .rightHead .bannerHead {
+        width: 500px;
+    }
+    #bottom{
+        background-color: #838383;
+    }
+    #body {
+        width: 64%;
+    }
+    aside {
+        padding: 23px 2%;
+        width: 96%;
+    }
+    #bottom {
+        height: auto;
+        padding: 5px 0;
+    }
+    .boxAside {
+        float: left;
+        width: 50%;
+    }
+    .boxAside.banner{
+        text-align: center;
+        float: right;
+    }
+    .boxAside.banner-2{
+        display: none;
+    }
+    /* detalle de post */
+    #body {
+        width: 100%;
+        float: none;
+    }
+    .postDetalle {
+        padding: 30px 0px 0px;
+    }
+    .postRelacionados ul li {
+        margin: 0 3.5% 0 0;
+    }
+    /* FOOTER */
+    footer .foot .bottom .right {
+       display: none;
+    }
 }
 
 /* Smartphones (portrait) (HASTA 568PX IPHONE 5 y tablet 7 pulgadas)----------- */
-@media only screen and (max-width : 568px) {
-    body{
-        background-color: black;
+@media only screen and (max-width : 600px) {
+    header .logo {
+        width: 174px;
+    }
+    header .head .rightHead .bannerHead {
+        display: none;
+    }
+    header .head{
+        display: inline-block;
+        margin: 0 0 10px;
+        width: 100%;
+    }
+    .boxAside {
+        float: none;
+        width: 60%;
+        margin: 0px auto 30px;
+    }
+    .boxAside.banner{
+        text-align: center;
+        float: none;
+        width: 60%;
+        margin: 0px auto 30px;
     }
 }
 /* Smartphones (landscape) (HASTA 480PX COLOR ROJO)----------- */
 @media only screen and (max-width : 480px) {
-    body{
-        background-color: red;
+    .postDetalle .boxDetalle .right {
+        width: 81%;
+    }
+    .postRelacionados ul li {
+        margin: 0 3.5% 15px 0;
+    }
+    .postDetalle h2.title {
+        font-size: 42px;
+        line-height: 48px;
     }
 }
 
 /* Smartphones (portrait) (HASTA 320PX COLOR NEGRO)----------- */
 @media only screen and (max-width : 320px) {
-    body{
-        background-color: green;
+    header .logo {
+        width: 122px;
+    }
+    header .head .rightHead .boxSearch input {
+        width: 132px;
+    }
+    .boxAside {
+        width: 100%;
+    }
+    .boxAside.banner{
+        width: 100%;
     }
 }

@@ -26,43 +26,73 @@
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="75" selection-start="4119" selection-end="4144" vertical-scroll-proportion="-4.3846154" vertical-offset="1773" max-vertical-offset="2499">
+            <state line="95" column="42" selection-start="3309" selection-end="3309" vertical-scroll-proportion="-12.038462" vertical-offset="1166" max-vertical-offset="2278">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
+      <file leaf-file-name="es_ES.po" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/languages/es_ES.po">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="55" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.5049505" vertical-offset="187" max-vertical-offset="2312">
+            <state line="3953" column="27" selection-start="144630" selection-end="144654" vertical-scroll-proportion="0.0" vertical-offset="66937" max-vertical-offset="130985">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/index.php">
+      <file leaf-file-name="cron.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-includes/cron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="22" selection-start="668" selection-end="668" vertical-scroll-proportion="-1.6153846" vertical-offset="179" max-vertical-offset="1292">
+            <state line="462" column="39" selection-start="14228" selection-end="14228" vertical-scroll-proportion="-5.923077" vertical-offset="7632" max-vertical-offset="7939">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="single.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/single.php">
+      <file leaf-file-name="class-s2-core.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/subscribe2/classes/class-s2-core.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="36" selection-start="2663" selection-end="2663" vertical-scroll-proportion="-12.884615" vertical-offset="447" max-vertical-offset="1105">
+            <state line="1322" column="31" selection-start="49705" selection-end="49705" vertical-scroll-proportion="0.648" vertical-offset="22150" max-vertical-offset="30923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/sidebar.php">
+      <file leaf-file-name="default-constants.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-includes/default-constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="59" selection-start="2686" selection-end="2688" vertical-scroll-proportion="-3.0769231" vertical-offset="872" max-vertical-offset="1513">
+            <state line="89" column="26" selection-start="2688" selection-end="2688" vertical-scroll-proportion="-7.0384617" vertical-offset="1262" max-vertical-offset="5423">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general-template.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="168" column="31" selection-start="5249" selection-end="5249" vertical-scroll-proportion="-4.769231" vertical-offset="2647" max-vertical-offset="41412">
+              <folding>
+                <marker date="1389934668509" expanded="true" signature="42261:42267" placeholder="..." />
+                <marker date="1389934668509" expanded="true" signature="43387:43393" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="237" selection-end="237" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-none.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/content-none.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="4" selection-start="165" selection-end="165" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -71,8 +101,10 @@
       <file leaf-file-name="content.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1241">
-              <folding />
+            <state line="18" column="45" selection-start="448" selection-end="448" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1326">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,29 +119,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/headerWP.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/responsive.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/styles.css" />
-        <option value="$PROJECT_DIR$/wp-includes/general-template.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/sidebar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/content-page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/require-js.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/search.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/category.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/content-none.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/header.php" />
+        <option value="$PROJECT_DIR$/wp-includes/default-constants.php" />
+        <option value="$PROJECT_DIR$/wp-includes/cron.php" />
+        <option value="$PROJECT_DIR$/wp-content/languages/es_ES.po" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -165,6 +199,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="wp-includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="wp-content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -206,62 +254,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wpmexico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wpmexico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wpmexico" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,6 +301,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subscribe2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="share-this" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -320,10 +356,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\wpmexico" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\wpmexico\js\wp" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\wpmexico\css" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\wpmexico\js" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\wpmexico" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\wpmexico\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -356,15 +392,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26457056" sideWeight="0.67017543" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21742424" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -373,7 +410,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -388,113 +424,126 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/inc/template-tags.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="7" selection-start="2382" selection-end="2382" vertical-scroll-proportion="-7.8461537" vertical-offset="1088" max-vertical-offset="3536" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/post-formats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="328" selection-end="328" vertical-scroll-proportion="0.35049504" vertical-offset="10" max-vertical-offset="4148" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="1" selection-start="6555" selection-end="6555" vertical-scroll-proportion="0.9375" vertical-offset="5066" max-vertical-offset="5678">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/content-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="308" selection-end="308" vertical-scroll-proportion="0.26930693" vertical-offset="0" max-vertical-offset="527" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1054">
+        <state line="46" column="31" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-7.1923075" vertical-offset="374" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="538" selection-end="538" vertical-scroll-proportion="0.33267328" vertical-offset="138" max-vertical-offset="41412">
-          <folding />
+        <state line="168" column="31" selection-start="5249" selection-end="5249" vertical-scroll-proportion="-4.769231" vertical-offset="2647" max-vertical-offset="41412">
+          <folding>
+            <marker date="1389934668509" expanded="true" signature="42261:42267" placeholder="..." />
+            <marker date="1389934668509" expanded="true" signature="43387:43393" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/examples.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/masonry-v2-shim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="50" selection-start="174" selection-end="174" vertical-scroll-proportion="0.28125" vertical-offset="0" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/masonry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3621">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/require-js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="121" selection-end="121" vertical-scroll-proportion="0.1875" vertical-offset="0" max-vertical-offset="544">
+        <state line="18" column="45" selection-start="448" selection-end="448" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1326">
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/sidebar.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="59" selection-start="2686" selection-end="2688" vertical-scroll-proportion="-3.0769231" vertical-offset="872" max-vertical-offset="1513">
+        <state line="12" column="23" selection-start="237" selection-end="237" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1105">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/index.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="668" selection-end="668" vertical-scroll-proportion="-1.6153846" vertical-offset="179" max-vertical-offset="1292">
+        <state line="327" column="0" selection-start="6501" selection-end="6501" vertical-scroll-proportion="0.58998144" vertical-offset="5241" max-vertical-offset="6987">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="36" selection-start="2663" selection-end="2663" vertical-scroll-proportion="-12.884615" vertical-offset="447" max-vertical-offset="1105">
+        <state line="11" column="4" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1360">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/content-none.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="4" selection-start="165" selection-end="165" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="5" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0331384" vertical-offset="187" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="321" selection-end="321" vertical-scroll-proportion="-1.5769231" vertical-offset="282" max-vertical-offset="1411">
+          <folding>
+            <element signature="e#6#203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="75" selection-start="4119" selection-end="4144" vertical-scroll-proportion="-4.3846154" vertical-offset="1773" max-vertical-offset="2499">
+        <state line="95" column="42" selection-start="3309" selection-end="3309" vertical-scroll-proportion="-12.038462" vertical-offset="1166" max-vertical-offset="2278">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/subscribe2/subscribe2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="55" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.5049505" vertical-offset="187" max-vertical-offset="2312">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.564" vertical-offset="782" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/languages/es_ES.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3953" column="27" selection-start="144630" selection-end="144654" vertical-scroll-proportion="0.0" vertical-offset="66937" max-vertical-offset="130985">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/default-constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="26" selection-start="2688" selection-end="2688" vertical-scroll-proportion="-7.0384617" vertical-offset="1262" max-vertical-offset="5423">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/subscribe2/subscribe2.pot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1177" column="7" selection-start="28410" selection-end="28410" vertical-scroll-proportion="0.52890176" vertical-offset="19826" max-vertical-offset="25483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="462" column="39" selection-start="14228" selection-end="14228" vertical-scroll-proportion="-5.923077" vertical-offset="7632" max-vertical-offset="7939">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/subscribe2/classes/class-s2-core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1322" column="31" selection-start="49705" selection-end="49705" vertical-scroll-proportion="0.648" vertical-offset="22150" max-vertical-offset="30923">
           <folding />
         </state>
       </provider>

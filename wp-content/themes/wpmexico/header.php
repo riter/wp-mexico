@@ -20,16 +20,18 @@
 <!--<![endif]-->
 <head>
 
+
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
 
-    <?php //wp_head(); ?>
+    <?php wp_head(); ?>
 
     <!-- JQUERY -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Chivo:400,900' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp/html5.js"></script>
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
@@ -48,7 +50,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/wp/masonry.js"></script>
 
     <!-- MENU RESPONSIVO -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/tinynav.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/tinynav.min.js"></script>
     <style>
         /* styles for desktop */
         .tinynav { display: none; }
@@ -63,8 +65,6 @@
             }
             #menu nav ul { display: none }
         }
-        .item { width: 25%; }
-        .item.w2 { width: 50%; }
     </style>
     <script>
         $(function () {
@@ -74,12 +74,12 @@
             });
 
         });
-
     </script>
+
+
 </head>
 
 <body <?php //body_class(); ?>>
-
     <!--<div id="page" class="hfeed site">-->
 
     <header class="content">
@@ -123,19 +123,6 @@
                             }
                         }
                         ?>
-                        <!--
-                        <li class="active"><a href="#" title="hoy">HOY</a></li>
-                        <li><a href="#" title="cultura">CULTURA</a></li>
-                        <li><a href="#" title="ciencia">CIENCIA</a></li>
-                        <li><a href="#" title="deporte">DEPORTE</a></li>
-                        <li><a href="#" title="turismo">TURISMO</a></li>
-                        <li><a href="#" title="tecnologia">TECNOLOGIA</a></li>
-                        <li><a href="#" title="ecologia">ECOLOGIA</a></li>
-                        <li><a href="#" title="nacional">NACIONAL</a></li>
-                        <li><a href="#" title="internacional">INTERNACIONAL</a></li>
-                        <li><a href="#" title="colaboraciones">COLABORACIONES</a></li>
-                        <li><a href="#" title="entrevistas">ENTREVISTAS</a></li>
-                        -->
                     </ul>
                 </nav>
             </section>

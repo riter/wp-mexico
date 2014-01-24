@@ -16,12 +16,12 @@ get_header(); ?>
                 // Start the Loop.
                 while ( have_posts() ) : the_post();
                     ?>
-                    <h2 class='title'><?php the_title()?></h2>;
+                    <h2 class='title'><?php the_title();?></h2>
                     <div class="boxDetalle">
                         <div class="left">
                             <div class="autor">
-                                <!--<img src="<?php echo get_template_directory_uri(); ?>/images/autor.png" alt="autor" />-->
-                                <?php echo get_avatar( get_the_author_meta( get_the_author_ID()) , 93 ); ?>
+                                <img src="<?php echo get_cimyFieldValue(get_the_author_ID(), 'AVATAR'); ?>" alt="autor" />
+                                <?php// echo get_avatar( get_the_author_meta( get_the_author_ID()) , 93 ); ?>
                             </div>
                             <div class="shareThis"><img src="<?php echo get_template_directory_uri(); ?>/images/share.png" alt="autor" /></div>
                         </div>
@@ -30,9 +30,24 @@ get_header(); ?>
                                 <div class="hTop">
                                     <span class="name">@<?php the_author();?></span>
                                     <div class="redes">
-                                        <a href="#" title="Rss"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.jpg" alt="Rss" /></a>
+                                        <!--<a href="#" title="Rss"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.jpg" alt="Rss" /></a>
                                         <a href="#" title="Facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.jpg" alt="Facebook" /></a>
-                                        <a href="#" title="Twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.jpg" alt="twitter" /></a>
+                                        <a href="#" title="Twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.jpg" alt="twitter" /></a>-->
+
+                                        <?php
+                                              $rss=get_cimyFieldValue(get_the_author_ID(), 'RSS');
+                                              $facebook=get_cimyFieldValue(get_the_author_ID(), 'FACEBOOK');
+                                              $twitter=get_cimyFieldValue(get_the_author_ID(), 'TWITTER');
+
+                                              if($rss!=null && $rss!=""){ ?>
+                                                <a href="<?php echo $rss; ?>" title="Rss"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.jpg" alt="Rss" /></a>
+                                        <?php }
+                                            if($facebook!=null && $facebook!=""){ ?>
+                                                <a href="<?php echo $facebook; ?>" title="Facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.jpg" alt="Facebook" /></a>
+                                        <?php }
+                                            if($twitter!=null && $twitter!=""){  ?>
+                                                <a href="<?php echo $twitter; ?>" title="Twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.jpg" alt="twitter" /></a>
+                                        <?php } ?>
                                     </div>
                                 </div>
                                 <!--<span class="date">Lunes 3, Diciembre.</span>-->

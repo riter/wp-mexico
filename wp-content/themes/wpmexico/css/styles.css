@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 /*---------------------- 
   RESET CSS
 ------------------------*/
@@ -9,10 +9,10 @@ a, span, img, strong,
 dl, dt, dd, ol, ul, li,
 form, fieldset, label, input, textarea
 {
-     margin: 0;
-     padding: 0;
+     margin: 0px;
+     padding: 0px;
      border: none;
-     outline: 0;
+     outline: 0px; 
      font-weight: normal;
 }
 ul, ol, li{list-style-type: none;}
@@ -27,7 +27,7 @@ body {
     font-family: Varela;
     font-size: 12px;
 }
-h1, h2, h3, h4, h5, h6 {font-weight:bold; color:#000000; margin:0;}
+h1, h2, h3, h4, h5, h6 {font-weight:bold; color:#000000; margin:0px;}
 header, section ,footer, nav, figure, time{
     display:block;
 }
