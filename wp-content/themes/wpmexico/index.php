@@ -45,8 +45,8 @@ get_header(); ?>
 <section id="content" class="content">
     <div id="body">
         <div class="postDetalle">
-            <h2 class='title'>Masonry - columnWidth</h2>
-            <div class="masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
+            <h2 class='title'>No se encontro nada</h2>
+            <!--<div class="masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
                 <div class="item"></div>
                 <div class="item w2 h2"></div>
                 <div class="item h3"></div>
@@ -70,7 +70,7 @@ get_header(); ?>
                 <div class="item"></div>
                 <div class="item"></div>
                 <div class="item h2"></div>
-            </div>
+            </div>-->
         </div>
     </div>
 	<?php get_sidebar( 'content' );
