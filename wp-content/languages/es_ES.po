@@ -3951,10 +3951,6 @@ msgstr "Dos veces al día"
 msgid "Once Daily"
 msgstr "Cada día"
 
-#: wp-includes/cron.php:367
-msgid "Quincenal"
-msgstr "Quincenal"
-
 #: wp-includes/default-widgets.php:68 wp-includes/default-widgets.php:159
 msgid "Sort by:"
 msgstr "Ordenar por:"
