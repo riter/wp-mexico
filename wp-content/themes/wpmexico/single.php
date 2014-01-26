@@ -23,7 +23,7 @@ get_header(); ?>
                                 <img src="<?php echo get_cimyFieldValue(get_the_author_ID(), 'AVATAR'); ?>" alt="autor" />
                                 <?php// echo get_avatar( get_the_author_meta( get_the_author_ID()) , 93 ); ?>
                             </div>
-                            <div class="shareThis"><img src="<?php echo get_template_directory_uri(); ?>/images/share.png" alt="autor" /></div>
+                            <!--<div class="shareThis"><img src="<?php echo get_template_directory_uri(); ?>/images/share.png" alt="autor" /></div>-->
                         </div>
                         <div class="right">
                             <div class="data">

@@ -59,9 +59,21 @@ class suscribe_options{
         ?>
         <div class="wrap">
             <h2>Export suscriptores a CSV file</h2>
-            <p class="submit">
-                <a href="<?php echo plugins_url('suscribe-options'); ?>/export-csv.php" class="button-primary" target="_blank">Export</a>
-            </p>
+
+
+            <form action="<?php echo plugins_url('suscribe-options'); ?>/export-csv.php" method="post">
+                <div class="grupo-radio">
+                    <div><input type="radio" name="group" value="Todos" checked><label>Todos</label></div>
+                    <div><input type="radio" name="group" value="Semanal" ><label>Semanal</label></div>
+                    <div><input type="radio" name="group" value="Quincenal"><label>Quincenal</label></div>
+                    <div><input type="radio" name="group" value="Mensual"><label>Mensual</label></div>
+                </div>
+                <p class="submit">
+                    <button type="submit" class="button-primary">Export</button>
+                </p>
+                <!--<a href="<?php echo plugins_url('suscribe-options'); ?>/export-csv.php" class="button-primary" target="_blank">Export</a>-->
+            </form>
+
 
         </div>
     <?php

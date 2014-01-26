@@ -11,10 +11,6 @@
 
 get_header(); ?>
 
-    <style>
-
-    </style>
-
 	<section id="content" class="content">
 		<div id="body" >
             <div class="postDetalle">
