@@ -19,7 +19,10 @@
         </div>
         <div class="boxAside boxMantenteInformado">
             <h3>Mantente informado</h3>
-            <div class="formSub">
+            <?php suscribe_form();
+
+            ?>
+            <!--<div class="formSub">
                 <div class="input"><input type="text" placeholder="Escribe aquí tu correo electrónico"/></div>
                 <div class="grupo-radio">
                     <div><input type="radio" name="group1" value="Semanal"><label>Semanal</label></div>
@@ -30,7 +33,7 @@
             </div>
             <div>
 
-            </div>
+            </div>-->
         </div>
         <div class="boxAside boxTemasImportantes">
             <?php if ( is_active_sidebar('sidebar-importantes') ) {
