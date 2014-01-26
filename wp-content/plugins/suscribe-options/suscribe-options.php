@@ -13,14 +13,20 @@ function suscribe_form(){
 
     if($_SERVER['REQUEST_METHOD']=="POST"){
         global $wpdb;
-        $wpdb->query( "INSERT INTO wp_suscriptor VALUE (0,'".$_REQUEST['email']."','".$_REQUEST['group']."','0')" );
+
+        $res=$wpdb->get_results( "select email from wp_suscriptor where email='".$_REQUEST['email']."'" );
+        if($res==null){
+            $wpdb->query( "INSERT INTO wp_suscriptor VALUE (0,'".$_REQUEST['email']."','".$_REQUEST['group']."','0')" );
+        }else{
+            echo "Ud ya esta suscrito";
+        }
     }
     ?>
     <form action="" method="post">
         <div class="formSub">
             <div class="input"><input name="email" type="text" placeholder="Escribe aquí tu correo electrónico"/></div>
             <div class="grupo-radio">
-                <div><input type="radio" name="group" value="Semanal"><label>Semanal</label></div>
+                <div><input type="radio" name="group" value="Semanal" checked><label>Semanal</label></div>
                 <div><input type="radio" name="group" value="Quincenal"><label>Quincenal</label></div>
                 <div><input type="radio" name="group" value="Mensual"><label>Mensual</label></div>
             </div>
