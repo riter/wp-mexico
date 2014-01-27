@@ -72,7 +72,7 @@
                     <?php echo get_the_post_thumbnail($postsincat[0]->ID) ?>
                 </div>
                 <!--<h4><a href="#" title="Ensalada César de la mano de Enrique Olvera">Ensalada César de la mano de Enrique Olvera</a></h4>-->
-                <h4><a href="#" title="<?php echo $postsincat[0]->post_title?>"><?php echo $postsincat[0]->post_title?></a></h4>
+                <h4><a href="<?php echo $postsincat[0]->guid ?>" title="<?php echo $postsincat[0]->post_title?>"><?php echo $postsincat[0]->post_title?></a></h4>
             </section>
         </div>
         <div class="banner-2 boxAside banner">

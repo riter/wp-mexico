@@ -27,8 +27,8 @@ get_header(); ?>
 						 * use this in a child theme, then include a file called called content-___.php
 						 * (where ___ is the post format) and that will be used instead.
 						 */
-                        $sw=($sw+1) % 8;
-                        if($sw>=2 && $sw<=5){
+                        $sw=($sw+1) % 6;
+                        if($sw>=2 && $sw<=3){
                             $clase="contendV-mansonry";
                         }else{
                             $clase="contendH-mansonry";

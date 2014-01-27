@@ -17,60 +17,49 @@
 get_header(); ?>
 
     <style>
-        .masonry {
-            background: #EEE;
-            max-width: 640px;
-        }
-
-        .masonry .item {
-            width:  60px;
-            height: 60px;
-            float: left;
-            background: #D26;
-            border: 2px solid #333;
-            border-color: hsla(0, 0%, 0%, 0.5);
-            border-radius: 5px;
-        }
-
-        .item.w2 { width:  120px; }
-        .item.w3 { width:  180px; }
-        .item.w4 { width:  240px; }
-
-        .item.h2 { height: 100px; }
-        .item.h3 { height: 130px; }
-        .item.h4 { height: 180px; }
 
     </style>
 
 <section id="content" class="content">
     <div id="body">
         <div class="postDetalle">
-            <h2 class='title'>No se encontro nada</h2>
-            <!--<div class="masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
-                <div class="item"></div>
-                <div class="item w2 h2"></div>
-                <div class="item h3"></div>
-                <div class="item h2"></div>
-                <div class="item w3"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item h2"></div>
-                <div class="item w2 h3"></div>
-                <div class="item"></div>
-                <div class="item h2"></div>
-                <div class="item"></div>
-                <div class="item w2 h2"></div>
-                <div class="item w2"></div>
-                <div class="item"></div>
-                <div class="item h2"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item h3"></div>
-                <div class="item h2"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item h2"></div>
-            </div>-->
+            <!--<h2 class='title'>No se encontro nada</h2>-->
+            <div class="boxDetalle masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
+                <?php
+                if ( have_posts() ) :
+                    $sw=-1;
+                    // Start the Loop.
+                    while ( have_posts() ) : the_post();
+                        /*
+                         * Include the post format-specific template for the content. If you want to
+                         * use this in a child theme, then include a file called called content-___.php
+                         * (where ___ is the post format) and that will be used instead.
+                         */
+                        $sw=($sw+1) % 6;
+                        if($sw>=2 && $sw<=3){
+                            $clase="contendV-mansonry";
+                        }else{
+                            $clase="contendH-mansonry";
+                        }
+                        ?>
+                        <div class="<?php echo $clase?>">
+                            <?php
+                            get_template_part( 'content', get_post_format() );
+                            ?>
+                        </div>
+
+                    <?php
+                    endwhile;
+                    // Previous/next post navigation.
+                    //twentyfourteen_paging_nav();
+
+                else :
+                    // If no content, include the "No posts found" template.
+                    get_template_part( 'content', 'none' );
+
+                endif;
+                ?>
+            </div>
         </div>
     </div>
 	<?php get_sidebar( 'content' );

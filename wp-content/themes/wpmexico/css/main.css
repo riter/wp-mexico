@@ -78,9 +78,84 @@ header .head .rightHead .boxSearch button{
     padding: 0 5px 3px;
     text-transform: uppercase;
 }
-#bottom #menu nav ul li a:hover, #bottom #menu nav ul li.active a{
+/* Inicio menu active y hover*/
+#bottom #menu nav ul li.active-1 a{
+    border-bottom: 3px solid #378433;
+}
+#bottom #menu nav ul li .hover-a1:hover{
 	border-bottom: 3px solid #378433;
 }
+
+#bottom #menu nav ul li.active-2 a{
+    border-bottom: 3px solid #ffb400;
+}
+#bottom #menu nav ul li .hover-a2:hover{
+    border-bottom: 3px solid #ffb400;
+}
+
+#bottom #menu nav ul li.active-3 a{
+    border-bottom: 3px solid #0084ff;
+}
+#bottom #menu nav ul li .hover-a3:hover{
+    border-bottom: 3px solid #0084ff;
+}
+
+#bottom #menu nav ul li.active-4 a{
+    border-bottom: 3px solid #ff0000;
+}
+#bottom #menu nav ul li .hover-a4:hover{
+    border-bottom: 3px solid #ff0000;
+}
+
+#bottom #menu nav ul li.active-5 a{
+    border-bottom: 3px solid #d803db;
+}
+#bottom #menu nav ul li .hover-a5:hover{
+    border-bottom: 3px solid #d803db;
+}
+
+#bottom #menu nav ul li.active-6 a{
+    border-bottom: 3px solid #2c03db;
+}
+#bottom #menu nav ul li .hover-a6:hover{
+    border-bottom: 3px solid #2c03db;
+}
+
+#bottom #menu nav ul li.active-7 a{
+    border-bottom: 3px solid #00d200;
+}
+#bottom #menu nav ul li .hover-a7:hover{
+    border-bottom: 3px solid #00d200;
+}
+
+#bottom #menu nav ul li.active-8 a{
+    border-bottom: 3px solid #9f4b01;
+}
+#bottom #menu nav ul li .hover-a8:hover{
+    border-bottom: 3px solid #9f4b01;
+}
+
+#bottom #menu nav ul li.active-9 a{
+    border-bottom: 3px solid #949560;
+}
+#bottom #menu nav ul li .hover-a9:hover{
+    border-bottom: 3px solid #949560;
+}
+
+#bottom #menu nav ul li.active-10 a{
+    border-bottom: 3px solid #cccccc;
+}
+#bottom #menu nav ul li .hover-a10:hover{
+    border-bottom: 3px solid #cccccc;
+}
+
+#bottom #menu nav ul li.active-11 a{
+    border-bottom: 3px solid #fab1ff;
+}
+#bottom #menu nav ul li .hover-a11:hover{
+    border-bottom: 3px solid #fab1ff;
+}
+/* fin menu active y hover*/
 
 #bottom .networks{
 	overflow: hidden;
@@ -179,8 +254,8 @@ header .head .rightHead .boxSearch button{
 		margin: 0px 38px 0px 0px;
 		height: 185px;
 }
-.postRelacionados ul li.last{
-		margin:0px;
+.postRelacionados ul li:last-child{
+		margin:0px !important;
 }
 .postRelacionados ul li a.thumb{
 	display: block;
@@ -319,6 +394,9 @@ footer .foot .bottom .right .section ul li a{
     color: #838383;
 }
 
+.shareThis{
+    cursor: pointer;
+}
 /*nuevos*/
 .autor > img{
     -webkit-border-radius: 50%;
@@ -327,8 +405,9 @@ footer .foot .bottom .right .section ul li a{
 }
 /* share plugin compartir*/
 .sthoverbuttons-pos-left {
-    left: 11% !important;
+    display: none !important;
 }
+
 /* Mansonry*/
 .contendH-mansonry{
     height: 180px;
@@ -362,9 +441,11 @@ footer .foot .bottom .right .section ul li a{
     height: 180px;
     font-family: chivo;
     font-weight: bold;
-    font-size: 30px;
+    /*font-size: 26px;
+    line-height: 100%;*/
+    font-size: 200%;
+    line-height: normal;
     padding: 10px 5px;
-    line-height: 100%;
     background-color: #FFFFFF;
     overflow: hidden;
     color: #2d2d2d;
@@ -382,7 +463,7 @@ footer .foot .bottom .right .section ul li a{
     border-top-style: solid;
     border-top-width: 3px;
     /*border-top-color: #000000;*/
-    /*height: 180px;*/
+    height: 180px;
     width: 100%;
     margin-right: 5px;
 }
@@ -400,9 +481,11 @@ footer .foot .bottom .right .section ul li a{
     height: 180px;
     font-family: chivo;
     font-weight: bold;
-    font-size: 30px;
+    /*font-size: 26px;
+    line-height: 100%;*/
+    font-size: 200%;
+    line-height: normal;
     padding: 10px 5px;
-    line-height: 100%;
     background-color: #FFFFFF;
     overflow: hidden;
     color: #2d2d2d;

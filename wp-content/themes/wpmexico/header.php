@@ -41,10 +41,11 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 
-    <!-- CSS -->
+    <!-- JS y CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/main.js"></script>
 
     <!-- Masonry-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/wp/masonry.js"></script>
@@ -115,10 +116,11 @@
                             'order'=> 'ASC',
                             'hide_empty'=>'0'
                         );
+                        $cant=0;
                         $categories = get_categories($arg);
                         foreach($categories as $category) {
-                            if(!$category->parent && $category->term_id!=19) {  ?>
-                                <li><a href="<?php  echo get_category_link( $category->term_id ) ?>" ><?php echo $category->name ?></a></li>
+                            if(!$category->parent && $category->term_id!=19 && $category->term_id!=22) {  $cant=($cant % 11) + 1 ; ?>
+                                <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>"><?php echo $category->name ?></a></li>
                         <?php
                             }
                         }

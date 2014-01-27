@@ -49,6 +49,8 @@ function st_log() {
 }
 
 jQuery(document).ready(function(){
+
+
 	jQuery('.wrap').css({'background':'white', 'width':'1002px','padding':'10px','border-radius':'5px'});
 	
 	removeInterval();
@@ -81,6 +83,7 @@ jQuery(document).ready(function(){
 });
 
 function st_signOut() {
+
 	jQuery('<iframe />', {
 		name: 'tempIframe',
 		id:   'tempIframe',
@@ -115,15 +118,16 @@ function submitForm(){
 
 function checkButtonJsStatus(){  
 	if(typeof(stbuttons) != "undefined"){ 
-		clearInterval(checkJsLoadingStatus);
+		clearInterval(checkJsLofadingStatus);
 		jQuery("#showLoadingStatus").hide();
 		jQuery("#wp_st_outerContainer").fadeIn(2000);
 		if(jQuery("#freshInstalation").val() == 0){
 			moveToNext(5);
 			enableLeftArrow();	
 		}
+
 	 }
-} 
+}
 
 function windowLoaded(){
 	checkJsLoadingStatus = setInterval(function(){
@@ -136,6 +140,8 @@ function windowLoaded(){
 	disableLeftArrow();	
 	
 	jQuery(".wp_st_navSlideDot").click(function(){
+
+
 		var isBtnBarSelected = validateUserSelection();
 		if(isBtnBarSelected == true){
 			var selectedDot = jQuery(this).attr("value");
@@ -193,7 +199,7 @@ function windowLoaded(){
 	}else if(st_btnType == "_buttons"){
 		st_btnType = "_large";
 	}
-	
+
 	var buttonType = st_btnType.substring(1);
 	var _buttonSize = "";
 	if(buttonType == "" || buttonType == "undefined" || buttonType == "none"){
@@ -298,6 +304,7 @@ function windowLoaded(){
 				jQuery(this).addClass("selected");
 				scriptLoading(jQuery(this).attr("id"));
 			}
+
 		}
 	});
 	

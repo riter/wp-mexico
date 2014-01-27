@@ -18,13 +18,13 @@ function suscribe_form(){
         if($res==null){
             $wpdb->query( "INSERT INTO wp_suscriptor VALUE (0,'".$_REQUEST['email']."','".$_REQUEST['group']."','0')" );
         }else{
-            echo "Ud ya esta suscrito";
+           // echo "Ud ya esta suscrito";
         }
     }
     ?>
     <form action="" method="post">
         <div class="formSub">
-            <div class="input"><input name="email" type="text" placeholder="Escribe aquí tu correo electrónico"/></div>
+            <div class="input"><input name="email" type="email" required="true" placeholder="Escribe aquí tu correo electrónico"/></div>
             <div class="grupo-radio">
                 <div><input type="radio" name="group" value="Semanal" checked><label>Semanal</label></div>
                 <div><input type="radio" name="group" value="Quincenal"><label>Quincenal</label></div>
@@ -38,7 +38,6 @@ function suscribe_form(){
 
 
 class suscribe_options{
-
 
     public function __construct(){
         add_action( 'admin_menu', array( $this, 'add_admin_pages' ) );
