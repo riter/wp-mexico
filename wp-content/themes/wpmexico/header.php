@@ -135,7 +135,7 @@
             <section class="networks">
                 <a href="http://www.facebook.com/share.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/btnFacebook.jpg" alt="Facebook" /></a>
                 <a href="http://twitter.com/home?status=Currently%20reading%20<?php the_permalink(); ?>" title="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/btnTwitter.jpg" alt="Twitter" /></a>
-                <a href="mailto:riter.cordova@gmail.com" title="email"><img src="<?php echo get_template_directory_uri(); ?>/images/btnEmail.jpg" alt="Email" /></a>
+                <a href="mailto:info@wp_mexico.com" title="email"><img src="<?php echo get_template_directory_uri(); ?>/images/btnEmail.jpg" alt="Email" /></a>
 
             </section>
         </div>

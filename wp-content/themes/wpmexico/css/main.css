@@ -545,7 +545,8 @@ footer .foot .bottom .right .section ul li a{
 .descripcion-slider > h2 > a{
     color: #ffffff;
     font-family: chivo;
-    font-size: 34px;
+    /*font-size: 34px;*/
+    font-size: 100%;
     font-weight: bold;
 }
 .descripcion-slider > span {
@@ -593,6 +594,10 @@ footer .foot .bottom .right .section ul li a{
 .bx-pager.bx-default-pager a.active {
     color: #2e73b8 !important;
     border-color:#2e73b8 !important;
+}
+.bx-pager.bx-default-pager a:hover {
+    color: #2e73b8 !important;
+    border-color: #2e73b8 !important;
 }
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     bottom: 13px !important;
