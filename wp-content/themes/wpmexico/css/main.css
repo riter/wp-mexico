@@ -238,11 +238,27 @@ header .head .rightHead .boxSearch button{
     line-height: 22px;
     margin: 0 0 20px;
 }
+.postTagRelacionados {
+    overflow: hidden;
+    padding: 0 0 30px 0px;
+    border-bottom: 1px solid #838383;
+    margin: 0 0 10px 105px;
+}
+.postTagRelacionados ul li {
+    float: left;
+    width: 231px;
+    text-align: center;
+}
+.postTagRelacionados ul li a {
+    font-size: 14px;
+    color: #838383;
+}
+
 .postRelacionados{
     overflow: hidden;
     padding: 0 0 30px 0px;
     border-bottom: 1px solid #838383;
-    margin: 0px 0px 10px 105px;
+    margin: 0 0 30px 105px;
 }
 .postRelacionados ul{
 	overflow: hidden;
@@ -402,6 +418,8 @@ footer .foot .bottom .right .section ul li a{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    max-width: 95px;
+    max-height: 95px;
 }
 /* share plugin compartir*/
 .sthoverbuttons-pos-left {
@@ -494,7 +512,7 @@ footer .foot .bottom .right .section ul li a{
 /*contenido bxslider*/
 .contend_slider{
     overflow: hidden;
-    margin: 0 15px 20px 0;
+    background: transparent;
 }
 .img-slider {
     width: 575px;
@@ -540,9 +558,18 @@ footer .foot .bottom .right .section ul li a{
     color: #468dcb;
 }
 .bx-wrapper{
-    margin-left: 0;
+    /*margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 0;*/
+    margin: 0 15px 20px 0;
+
+}
+.bx-viewport{
+    background: transparent !important;
+    border-color: transparent !important;
+    -moz-box-shadow: 0 0 0  !important;
+    -webkit-box-shadow: 0 0  !important;
+    box-shadow: 0 0 0  !important;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
     background: transparent !important;

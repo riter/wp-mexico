@@ -29,7 +29,7 @@ get_header(); ?>
 
                 <?php
                 if ( have_posts() ) :
-                    $contDestacado=0;
+                    $destacados=array();
 
                     global $post;
                     $args = array( 'cat' => '22' );
@@ -37,7 +37,7 @@ get_header(); ?>
 
                     echo "<div class='contend_slider slider'>";
 
-                    foreach( $myposts as $post ) :  setup_postdata($post); ?>
+                    foreach( $myposts as $post ) :  setup_postdata($post); $destacados[]= get_the_ID()?>
                         <div>
                             <div class="img-slider">
                                 <a href="<?php  echo esc_url( get_permalink() );?>">
@@ -62,17 +62,21 @@ get_header(); ?>
                          * use this in a child theme, then include a file called called content-___.php
                          * (where ___ is the post format) and that will be used instead.
                          */
-                        $sw=($sw+1) % 6;
-                        if($sw>=2 && $sw<=3){
-                            $clase="contendV-mansonry";
-                        }else{
-                            $clase="contendH-mansonry";
-                        }
-                        ?>
-                            <div class="<?php echo $clase?>">
-                                <?php get_template_part( 'content', get_post_format() );  ?>
-                            </div>
+                        if (! in_array(get_the_ID(), $destacados)) {
+
+
+                            $sw=($sw+1) % 6;
+                            if($sw>=2 && $sw<=3){
+                                $clase="contendV-mansonry";
+                            }else{
+                                $clase="contendH-mansonry";
+                            }
+                            ?>
+                                <div class="<?php echo $clase?>">
+                                    <?php get_template_part( 'content', get_post_format() );  ?>
+                                </div>
                 <?php
+                        }
                     endwhile;
                     // Previous/next post navigation.
                     //twentyfourteen_paging_nav();

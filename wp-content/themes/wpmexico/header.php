@@ -124,7 +124,7 @@
                         $categories = get_categories($arg);
                         foreach($categories as $category) {
                             if(!$category->parent && $category->term_id!=19 && $category->term_id!=22) {  $cant=($cant % 11) + 1 ; ?>
-                                <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>"><?php echo $category->name.$category->term_id ?></a></li>
+                                <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>"><?php echo $category->name ?></a></li>
                         <?php
                             }
                         }
