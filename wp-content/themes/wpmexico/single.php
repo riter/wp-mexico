@@ -62,21 +62,21 @@ get_header(); ?>
                         <?php wp_related_posts()?>
                     </div>
 
-                    <div class="postTagRelacionados">
-
                         <?php
                         if ( 'post' == get_post_type() ){
-                            echo "<ul>";
                             $taxs = wp_get_post_tags( get_the_ID() );
-                            foreach($taxs as $tax){
-                                echo "<li><a href='".get_tag_link($tax->term_id)."'>".$tax->name."</a></li>";
+                            if(count($taxs)>0){
+                                echo "<div class='postTagRelacionados'>";
+                                echo "<ul>";
+                                foreach($taxs as $tax){
+                                    echo "<li><a href='".get_tag_link($tax->term_id)."'>".$tax->name."</a></li>";
+                                }
+                                echo "</ul>";
+                                echo "</div>";
                             }
-                            echo "</ul>";
-                            //print_r($taxs);
                         }
-
                         ?>
-                    </div>
+
 
                     <?php
                     // If comments are open or we have at least one comment, load up the comment template.

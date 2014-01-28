@@ -412,6 +412,8 @@ footer .foot .bottom .right .section ul li a{
 
 .shareThis{
     cursor: pointer;
+    position: fixed;
+    margin-left: 15px;
 }
 /*nuevos*/
 .autor > img{
