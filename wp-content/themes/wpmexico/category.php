@@ -45,6 +45,7 @@ get_header(); ?>
                         }
                         ?>
                     <div class="<?php echo $clase?>">
+
             <?php
                         get_template_part( 'content', get_post_format() );
                     ?>

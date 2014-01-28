@@ -25,9 +25,36 @@ get_header(); ?>
         <div class="postDetalle">
             <!--<h2 class='title'>No se encontro nada</h2>-->
             <div class="boxDetalle masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
+
+
                 <?php
                 if ( have_posts() ) :
+                    $contDestacado=0;
+
+                    global $post;
+                    $args = array( 'cat' => '22' );
+                    $myposts = get_posts( $args );
+
+                    echo "<div class='contend_slider slider'>";
+
+                    foreach( $myposts as $post ) :  setup_postdata($post); ?>
+                        <div>
+                            <div class="img-slider">
+                                <a href="<?php  echo esc_url( get_permalink() );?>">
+                                    <?php the_post_thumbnail()?>
+                                </a>
+                            </div>
+                            <div class="descripcion-slider">
+                                <?php the_title( '<h2><a href="' . esc_url( get_permalink() ) . '" rel="">', '</a></h2>' );?>
+                                <span><?php the_excerpt();?></span>
+                            </div>
+                        </div>
+                <?php
+                    endforeach;
+                    echo "</div>";
+
                     $sw=-1;
+                    query_posts("");
                     // Start the Loop.
                     while ( have_posts() ) : the_post();
                         /*
@@ -42,13 +69,10 @@ get_header(); ?>
                             $clase="contendH-mansonry";
                         }
                         ?>
-                        <div class="<?php echo $clase?>">
-                            <?php
-                            get_template_part( 'content', get_post_format() );
-                            ?>
-                        </div>
-
-                    <?php
+                            <div class="<?php echo $clase?>">
+                                <?php get_template_part( 'content', get_post_format() );  ?>
+                            </div>
+                <?php
                     endwhile;
                     // Previous/next post navigation.
                     //twentyfourteen_paging_nav();

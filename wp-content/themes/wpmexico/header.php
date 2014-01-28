@@ -28,10 +28,14 @@
     <?php wp_head(); ?>
 
     <!-- JQUERY -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/jquery-1.10.1.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Chivo:400,900' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp/html5.js"></script>
+
+    <!-- PLUGIN BXSLIDER-->
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/plugins/bxslider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/plugins/bxslider/jquery.bxslider.css" />
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
@@ -120,7 +124,7 @@
                         $categories = get_categories($arg);
                         foreach($categories as $category) {
                             if(!$category->parent && $category->term_id!=19 && $category->term_id!=22) {  $cant=($cant % 11) + 1 ; ?>
-                                <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>"><?php echo $category->name ?></a></li>
+                                <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>"><?php echo $category->name.$category->term_id ?></a></li>
                         <?php
                             }
                         }
