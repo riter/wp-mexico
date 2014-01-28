@@ -420,8 +420,8 @@ footer .foot .bottom .right .section ul li a{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    max-width: 95px;
-    max-height: 95px;
+    /*max-width: 95px;
+    max-height: 95px;*/
 }
 /* share plugin compartir*/
 .sthoverbuttons-pos-left {

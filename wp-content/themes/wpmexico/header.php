@@ -90,7 +90,7 @@
     <header class="content">
         <div class="head">
             <section class="logo">
-                <a href="#" title="Journal Mexico">
+                <a href="<?php echo get_site_url() ?>" title="Journal Mexico">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Journal Mexico" />
                 </a>
             </section>
@@ -133,11 +133,10 @@
                 </nav>
             </section>
             <section class="networks">
-                <a class="contact" HREF=\"mailto:\?subject\=Take?body=You_can_see_this_page_at:">Email to a Friend</a>
-                <a class="email-share" href="mailto:?subject=Check this out&body=I found this article interesting and thought of sharing it with you. Check it out: <?php the_permalink(); ?>" target="_blank">XXXX</a>
-                <a href="#" title="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/btnFacebook.jpg" alt="Facebook" /></a>
-                <a href="#" title="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/btnTwitter.jpg" alt="Twitter" /></a>
-                <a href="#" title="email"><img src="<?php echo get_template_directory_uri(); ?>/images/btnEmail.jpg" alt="Email" /></a>
+                <a href="http://www.facebook.com/share.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/btnFacebook.jpg" alt="Facebook" /></a>
+                <a href="http://twitter.com/home?status=Currently%20reading%20<?php the_permalink(); ?>" title="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/btnTwitter.jpg" alt="Twitter" /></a>
+                <a href="mailto:riter.cordova@gmail.com" title="email"><img src="<?php echo get_template_directory_uri(); ?>/images/btnEmail.jpg" alt="Email" /></a>
+
             </section>
         </div>
     </div>

@@ -64,6 +64,10 @@ img{
         float: none;
         padding: 0 0 0 45px;
     }
+
+    .descripcion-slider {
+        display: none;
+    }
 }
 /* iPads (portrait) (HASTA 800PX y 768PX COLOR AZUL)  ----------- */
 @media only screen and (max-width : 800px) {
@@ -113,6 +117,13 @@ img{
     footer .foot .bottom .right {
        display: none;
     }
+
+    .descripcion-slider {
+        display: none;
+    }
+    .contendV-mansonry {
+        float: none;
+    }
 }
 
 /* Smartphones (portrait) (HASTA 568PX IPHONE 5 y tablet 7 pulgadas)----------- */
@@ -139,6 +150,17 @@ img{
         width: 60%;
         margin: 0px auto 30px;
     }
+    .shareThis {
+        top: 58%;
+    }
+    .contendH-mansonry {
+        height: 386px;
+        width: 180px;
+    }
+    .contendV-mansonry {
+        float: left;
+    }
+
 }
 /* Smartphones (landscape) (HASTA 480PX COLOR ROJO)----------- */
 @media only screen and (max-width : 480px) {
