@@ -133,6 +133,8 @@
                 </nav>
             </section>
             <section class="networks">
+                <a class="contact" HREF=\"mailto:\?subject\=Take?body=You_can_see_this_page_at:">Email to a Friend</a>
+                <a class="email-share" href="mailto:?subject=Check this out&body=I found this article interesting and thought of sharing it with you. Check it out: <?php the_permalink(); ?>" target="_blank">XXXX</a>
                 <a href="#" title="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/btnFacebook.jpg" alt="Facebook" /></a>
                 <a href="#" title="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/btnTwitter.jpg" alt="Twitter" /></a>
                 <a href="#" title="email"><img src="<?php echo get_template_directory_uri(); ?>/images/btnEmail.jpg" alt="Email" /></a>
