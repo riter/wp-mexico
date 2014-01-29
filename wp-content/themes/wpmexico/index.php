@@ -14,25 +14,20 @@
  * @since Twenty Fourteen 1.0
  */
 
-get_header(); ?>
+get_header();
 
-    <style>
-
-    </style>
-
+    ?>
 <section id="content" class="content">
     <div id="body">
-        <div class="postDetalle">
+        <!--<div class="postDetalle">-->
             <!--<h2 class='title'>No se encontro nada</h2>-->
-            <div class="boxDetalle masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
-
 
                 <?php
                 if ( have_posts() ) :
                     $destacados=array();
 
                     global $post;
-                    $args = array( 'cat' => '22' );
+                    $args = array( 'cat' => '22','order'=> 'DESC','posts_per_page'=>3);
                     $myposts = get_posts( $args );
 
                     echo "<div class='contend_slider slider'>";
@@ -52,11 +47,17 @@ get_header(); ?>
                 <?php
                     endforeach;
                     echo "</div>";
+                    ?>
+            <!--masonry -->
+            <div id="masonry-index">
+                <?php
 
                     $sw=-1;
-                    query_posts("");
+                    query_posts(array('order'=> 'DESC'));
+
                     // Start the Loop.
                     while ( have_posts() ) : the_post();
+                        //foreach( $myposts as $post ) :  setup_postdata($post);
                         /*
                          * Include the post format-specific template for the content. If you want to
                          * use this in a child theme, then include a file called called content-___.php
@@ -72,12 +73,17 @@ get_header(); ?>
                                 $clase="contendH-mansonry";
                             }
                             ?>
-                                <div class="<?php echo $clase?>">
-                                    <?php get_template_part( 'content', get_post_format() );  ?>
-                                </div>
-                <?php
+                            <div class="item <?php echo $clase?>">
+                                <?php get_template_part( 'content', get_post_format() );  ?>
+                            </div>
+
+                        <?php
                         }
+                        // endforeach;
                     endwhile;
+                    /*for($i=0; $i<1;$i++){
+                        mostrar($sw,$destacados);
+                    }*/
                     // Previous/next post navigation.
                     //twentyfourteen_paging_nav();
 
@@ -88,13 +94,45 @@ get_header(); ?>
                 endif;
                 ?>
             </div>
-        </div>
+        <!--</div>-->
     </div>
 	<?php get_sidebar( 'content' );
         get_sidebar();
     ?>
 
 </section>
-
 <?php
     get_footer();
+
+function mostrar(&$sw,$destacados){
+
+    query_posts(array('order'=> 'DESC'));
+
+    // Start the Loop.
+    while ( have_posts() ) : the_post();
+        //foreach( $myposts as $post ) :  setup_postdata($post);
+        /*
+         * Include the post format-specific template for the content. If you want to
+         * use this in a child theme, then include a file called called content-___.php
+         * (where ___ is the post format) and that will be used instead.
+         */
+        if (! in_array(get_the_ID(), $destacados)) {
+
+
+            $sw=($sw+1) % 6;
+            if($sw>=2 && $sw<=3){
+                $clase="contendV-mansonry";
+            }else{
+                $clase="contendH-mansonry";
+            }
+            ?>
+            <div class="item <?php echo $clase?>">
+                <?php get_template_part( 'content', get_post_format() );  ?>
+            </div>
+
+        <?php
+        }
+        // endforeach;
+    endwhile;
+}
+

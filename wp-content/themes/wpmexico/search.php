@@ -17,7 +17,7 @@ get_header(); ?>
 
                 <h2 class="title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h2>
 
-                <div class="boxDetalle masonry js-masonry"  data-masonry-options='{ "columnWidth": 60 }'>
+                <div id="masonry-index">
 				<?php
 					// Start the Loop.
                     $sw=-1;
@@ -35,9 +35,7 @@ get_header(); ?>
                         }
                         ?>
                     <div class="<?php echo $clase?>">
-                <?php
-                        get_template_part( 'content', get_post_format() );
-                     ?>
+                        <?php get_template_part( 'content', get_post_format() );?>
                     </div>
 
                 <?php
@@ -56,10 +54,10 @@ get_header(); ?>
             </div>
 		</div><!-- #content -->
 
-<?php
-get_sidebar( 'content' );
-get_sidebar();
-?>
+        <?php
+        get_sidebar( 'content' );
+        get_sidebar();
+        ?>
     </section><!-- #primary -->
 <?php
 get_footer();

@@ -18,7 +18,7 @@
         if ( is_single() ) :
             the_title( '<span>', '</span>' );
         else :
-            the_title( '<span><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></span>' );
+            the_title( '<div><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' );
         endif;
         ?>
 

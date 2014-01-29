@@ -20,6 +20,13 @@
 <!--<![endif]-->
 <head>
 
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+    <![endif]-->
 
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -27,32 +34,23 @@
 
     <?php wp_head(); ?>
 
-    <!-- JQUERY -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/jquery-1.10.1.min.js"></script>
+    <!-- JQUERY-->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/jquery-1.10.1.min.js?ver=1.10.1"></script>
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Chivo:400,900' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp/html5.js"></script>
+
+    <!-- Masonry-->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/masonry.pkgd.min.js"></script>
 
     <!-- PLUGIN BXSLIDER-->
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/plugins/bxslider/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/plugins/bxslider/jquery.bxslider.css" />
-
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
 
     <!-- JS y CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
     <script src="<?php echo get_template_directory_uri(); ?>/js/wp/main.js"></script>
-
-    <!-- Masonry-->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/masonry.js"></script>
 
     <!-- MENU RESPONSIVO -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/wp/tinynav.min.js"></script>

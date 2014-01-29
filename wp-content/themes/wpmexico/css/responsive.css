@@ -121,9 +121,9 @@ img{
     .descripcion-slider {
         display: none;
     }
-    .contendV-mansonry {
+    /*.contendV-mansonry {
         float: none;
-    }
+    }*/
 }
 
 /* Smartphones (portrait) (HASTA 568PX IPHONE 5 y tablet 7 pulgadas)----------- */
@@ -153,13 +153,13 @@ img{
     .shareThis {
         top: 58%;
     }
-    .contendH-mansonry {
+    /*.contendH-mansonry {
         height: 386px;
         width: 180px;
     }
     .contendV-mansonry {
         float: left;
-    }
+    }*/
 
 }
 /* Smartphones (landscape) (HASTA 480PX COLOR ROJO)----------- */
