@@ -73,9 +73,9 @@ get_header();
                         <?php
                         }
                     endwhile;
-                    for($i=0; $i<3;$i++){
+                    /*for($i=0; $i<3;$i++){
                         mostrar($destacados);
-                    }
+                    }*/
                     // Previous/next post navigation.
                     //twentyfourteen_paging_nav();
 
