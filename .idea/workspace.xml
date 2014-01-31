@@ -44,10 +44,24 @@
       <file leaf-file-name="content.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="611" selection-end="611" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1411">
+            <state line="21" column="17" selection-start="739" selection-end="739" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1445">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1391187824403" expanded="true" signature="1041:1212" placeholder="..." />
+                <marker date="1391187824403" expanded="true" signature="1349:1428" placeholder="..." />
+                <marker date="1391187824403" expanded="true" signature="1868:1908" placeholder="..." />
+                <marker date="1391187824403" expanded="true" signature="2550:2601" placeholder="..." />
+                <marker date="1391187824403" expanded="true" signature="2657:2705" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="555" column="40" selection-start="11194" selection-end="11194" vertical-scroll-proportion="0.0" vertical-offset="9103" max-vertical-offset="11271">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,10 +114,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/tag.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/main.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/content.php" />
         <option value="$PROJECT_DIR$/wp-config.php" />
       </list>
     </option>
@@ -267,6 +281,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wpmexico" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="437" column="0" selection-start="8846" selection-end="8846" vertical-scroll-proportion="0.26901668" vertical-offset="7284" max-vertical-offset="11322">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="14" selection-start="91" selection-end="91" vertical-scroll-proportion="0.15178572" vertical-offset="0" max-vertical-offset="560">
@@ -515,11 +548,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="555" column="40" selection-start="11194" selection-end="11194" vertical-scroll-proportion="0.0" vertical-offset="9103" max-vertical-offset="11271">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="611" selection-end="611" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1411">
+        <state line="21" column="17" selection-start="739" selection-end="739" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1445">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1391187824403" expanded="true" signature="1041:1212" placeholder="..." />
+            <marker date="1391187824403" expanded="true" signature="1349:1428" placeholder="..." />
+            <marker date="1391187824403" expanded="true" signature="1868:1908" placeholder="..." />
+            <marker date="1391187824403" expanded="true" signature="2550:2601" placeholder="..." />
+            <marker date="1391187824403" expanded="true" signature="2657:2705" placeholder="..." />
           </folding>
         </state>
       </provider>

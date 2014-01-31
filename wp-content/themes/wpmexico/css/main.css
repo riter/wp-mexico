@@ -455,9 +455,6 @@ footer .foot .bottom .right .section ul li a{
     overflow: hidden;
     background-color: #FFFFFF;
     padding: 10px 8px;
-
-
-
 }
 /*.masonry-titulo{*/
 .modulo1-masonry > div:last-child > a{
@@ -484,7 +481,7 @@ footer .foot .bottom .right .section ul li a{
     width: 190px;
 }
 /*.thums-masonry > img{*/
-.modulo2-masonry > div:first-child > img{
+.modulo2-masonry > div:first-child > a >img{
     height: 100%;
     width: 100%;
 }
@@ -522,7 +519,7 @@ footer .foot .bottom .right .section ul li a{
     /*margin-right: 5px;*/
 }
 
-.modulo3-masonry > div:first-child > img{
+.modulo3-masonry > div:first-child > a >img{
     height: 100%;
     width: 100%;
 }
@@ -556,7 +553,7 @@ footer .foot .bottom .right .section ul li a{
     width: 100%;
 }
 /*.thums-masonry > img{*/
-.modulo4-masonry > div:first-child > img{
+.modulo4-masonry > div:first-child > a >img{
     height: 100%;
     width: 100%;
 }

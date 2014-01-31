@@ -15,7 +15,9 @@
     ?>
         <div class="<?php echo get_field("tipo_modulo")?>-masonry">
             <div style="border-top-color: <?php printf( "#%06X\n", mt_rand( 0, 0x222222 )); ?>;">
-                <?php the_post_thumbnail();?>
+                <a href=" <?php  echo esc_url( get_permalink() ) ?>" rel="bookmark">
+                    <?php the_post_thumbnail();?>
+                </a>
             </div>
             <?php
             if ( is_single() ) :
