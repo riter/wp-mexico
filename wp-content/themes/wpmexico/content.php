@@ -9,18 +9,23 @@
  * @since Twenty Fourteen 1.0
  */
 
-    ?>
 
-        <div style="border-top-color: <?php printf( "#%06X\n", mt_rand( 0, 0x222222 )); ?>;">
-            <?php the_post_thumbnail();?>
+    if(get_field("tipo_modulo")){
+        $color_modulo_texto=get_field("tipo_modulo")=="modulo1"?"style='border-top-color:#". strtoupper(dechex(rand(0,10000000)))."'":"";
+    ?>
+        <div class="<?php echo get_field("tipo_modulo")?>-masonry">
+            <div style="border-top-color: <?php printf( "#%06X\n", mt_rand( 0, 0x222222 )); ?>;">
+                <?php the_post_thumbnail();?>
+            </div>
+            <?php
+            if ( is_single() ) :
+                the_title( '<div>', '</div>' );
+            else :
+                the_title( '<div '.$color_modulo_texto.'><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' );
+            endif;
+            ?>
         </div>
-        <?php
-        if ( is_single() ) :
-            the_title( '<span>', '</span>' );
-        else :
-            the_title( '<div><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' );
-        endif;
-        ?>
+<?php } ?>
 
 <!--
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

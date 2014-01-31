@@ -52,12 +52,11 @@ get_header();
             <div id="masonry-index">
                 <?php
 
-                    $sw=-1;
+                    //$sw=-1;
                     query_posts(array('order'=> 'DESC'));
 
                     // Start the Loop.
                     while ( have_posts() ) : the_post();
-                        //foreach( $myposts as $post ) :  setup_postdata($post);
                         /*
                          * Include the post format-specific template for the content. If you want to
                          * use this in a child theme, then include a file called called content-___.php
@@ -65,25 +64,18 @@ get_header();
                          */
                         if (! in_array(get_the_ID(), $destacados)) {
 
-
-                            $sw=($sw+1) % 6;
-                            if($sw>=2 && $sw<=3){
-                                $clase="contendV-mansonry";
-                            }else{
-                                $clase="contendH-mansonry";
-                            }
                             ?>
-                            <div class="item <?php echo $clase?>">
-                                <?php get_template_part( 'content', get_post_format() );  ?>
-                            </div>
+                            <!--<div class="item <?php echo $clase?>">
+                                <?php //get_template_part( 'content', get_post_format() );  ?>
+                            </div>-->
+                            <?php get_template_part( 'content', get_post_format() );  ?>
 
                         <?php
                         }
-                        // endforeach;
                     endwhile;
-                    /*for($i=0; $i<1;$i++){
-                        mostrar($sw,$destacados);
-                    }*/
+                    for($i=0; $i<3;$i++){
+                        mostrar($destacados);
+                    }
                     // Previous/next post navigation.
                     //twentyfourteen_paging_nav();
 
@@ -104,35 +96,23 @@ get_header();
 <?php
     get_footer();
 
-function mostrar(&$sw,$destacados){
+function mostrar($destacados){
 
     query_posts(array('order'=> 'DESC'));
 
     // Start the Loop.
     while ( have_posts() ) : the_post();
-        //foreach( $myposts as $post ) :  setup_postdata($post);
         /*
          * Include the post format-specific template for the content. If you want to
          * use this in a child theme, then include a file called called content-___.php
          * (where ___ is the post format) and that will be used instead.
          */
-        if (! in_array(get_the_ID(), $destacados)) {
+        //if (! in_array(get_the_ID(), $destacados)) {
 
-
-            $sw=($sw+1) % 6;
-            if($sw>=2 && $sw<=3){
-                $clase="contendV-mansonry";
-            }else{
-                $clase="contendH-mansonry";
-            }
             ?>
-            <div class="item <?php echo $clase?>">
-                <?php get_template_part( 'content', get_post_format() );  ?>
-            </div>
-
+            <?php get_template_part( 'content', get_post_format() );  ?>
         <?php
-        }
-        // endforeach;
+        //}
     endwhile;
 }
 

@@ -1,3 +1,37 @@
+
+<style>
+
+    .modulo-1{
+        background: url(../wp-admin/images/modulo_1.png) no-repeat;
+        display: inline-block;
+        width: 31px;
+        height: 64px;
+        background-position-y: 34;
+    }
+    .modulo-2{
+        background: url(../wp-admin/images/modulo_2.png) no-repeat;
+        display: inline-block;
+        width: 62px;
+        height: 64px;
+        background-position-y: 34;
+    }
+    .modulo-3{
+        background: url(../wp-admin/images/modulo_3.png) no-repeat;
+        display: inline-block;
+        width: 31px;
+        height: 64px;
+        background-position-y: 3;
+    }
+    .modulo-4{
+        background: url(../wp-admin/images/modulo_4.png) no-repeat;
+        display: inline-block;
+        width: 62px;
+        height: 64px;
+        background-position-y: 3;
+    }
+</style>
+
+
 <?php
 /**
  * WordPress Administration Bootstrap

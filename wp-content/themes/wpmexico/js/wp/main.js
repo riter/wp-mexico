@@ -16,8 +16,10 @@ $(document).on("ready",function(){
 
     var test_masonry=$('#masonry-index');
         test_masonry.masonry({
-            columnWidth: 200,
+            columnWidth: 190,
             isAnimated: true,
-            isFitWidth: true
+            isFitWidth: true,
+            gutter: 3
         });
+
 });

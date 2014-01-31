@@ -414,6 +414,7 @@ footer .foot .bottom .right .section ul li a{
     cursor: pointer;
     position: fixed;
     margin-left: 15px;
+    top: 62%;
 }
 /*nuevos*/
 .autor > img{
@@ -428,45 +429,75 @@ footer .foot .bottom .right .section ul li a{
     display: none !important;
 }
 
-/* Mansonry*/
+/* Masonry*/
 #fit-width .masonry {
     margin: 0 auto;
 }
-
-#masonry-index{
-    /*height: inherit !important;*/
+#masonry-index > div {
+    margin-bottom: 3px;
 }
-.contendH-mansonry{
-    height: 180px;
-    width: 380px;
+/* Solo Texto*/
+.modulo1-masonry{
+    height: 190px;
+    width: 190px;
     overflow: hidden;
-    margin: 0 15px 20px 0;
-    /*float: left;*/
 }
-/*.thums-mansonry{*/
-.contendH-mansonry > div:first-child {
+.modulo1-masonry > div:first-child {
+    display: none;
+}
+.modulo1-masonry > div:last-child {
+    width: 174px;
+    height: 167px;
+
     border-top-style: solid;
     border-top-width: 3px;
-    /*border-top-color: #000000;*/
-    float: left;
-    height: 180px;
-    width: 180px;
-    margin-right: 5px;
-}
-/*.thums-mansonry > img{*/
-.contendH-mansonry > div:first-child > img{
-    height: 100%;
-    width: 100%;
-}
-.contendH-mansonry > div:last-child {
-    height: 100%;
+
     overflow: hidden;
     background-color: #FFFFFF;
-    padding: 13px 5px;
+    padding: 10px 8px;
+
+
 
 }
 /*.masonry-titulo{*/
-.contendH-mansonry > div:last-child > a{
+.modulo1-masonry > div:last-child > a{
+    font-family: chivo;
+    font-weight: bold;
+    font-size: 200%;
+    line-height: normal;
+    color: #2d2d2d;
+}
+
+/* vertical*/
+.modulo2-masonry{
+    height: 190px;
+    width: 380px;
+    overflow: hidden;
+    /*margin: 0 15px 20px 0;*/
+}
+/*.thums-mansonry{*/
+.modulo2-masonry > div:first-child {
+    border-top-style: solid;
+    border-top-width: 3px;
+    float: left;
+    height: 187px;
+    width: 190px;
+}
+/*.thums-masonry > img{*/
+.modulo2-masonry > div:first-child > img{
+    height: 100%;
+    width: 100%;
+}
+.modulo2-masonry > div:last-child {
+    width: 174px;
+    height: 170px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    padding: 10px 8px;
+
+}
+/*.masonry-titulo{*/
+.modulo2-masonry > div:last-child > a{
     font-family: chivo;
     font-weight: bold;
     font-size: 200%;
@@ -474,42 +505,64 @@ footer .foot .bottom .right .section ul li a{
     color: #2d2d2d;
 }
 /* vertical*/
-.contendV-mansonry {
-    min-height: 389px;
-    width: 180px;
+.modulo3-masonry {
+    height: 380px;
+    width: 190px;
     overflow: hidden;
-    margin: 0 15px 20px 0;
-    /*float: left;*/
+    /*margin: 0 15px 20px 0;*/
 }
 
-/*.contendV-mansonry > div {*/
-.contendV-mansonry > div:first-child {
+/*.modulo3-masonry > div {*/
+.modulo3-masonry > div:first-child {
     border-top-style: solid;
     border-top-width: 3px;
     /*border-top-color: #000000;*/
-    height: 180px;
+    height: 187px;
     width: 100%;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
 }
 
-.contendV-mansonry > div:first-child > img{
+.modulo3-masonry > div:first-child > img{
     height: 100%;
     width: 100%;
 }
-.contendV-mansonry > div:last-child {
+.modulo3-masonry > div:last-child {
     /*height: 100%;*/
     height: 180px;
     overflow: hidden;
     background-color: #FFFFFF;
     padding: 13px 10px;
 }
-.contendV-mansonry > div:last-child > a{
+.modulo3-masonry > div:last-child > a{
     /*height: 180px;*/
     font-family: chivo;
     font-weight: bold;
     font-size: 200%;
     line-height: normal;
     color: #2d2d2d;
+}
+
+/* Solo Imagen*/
+.modulo4-masonry{
+    height: 380px;
+    width: 380px;
+    overflow: hidden;
+}
+/*.thums-mansonry{*/
+.modulo4-masonry > div:first-child {
+    border-top-style: solid;
+    border-top-width: 3px;
+    height: 387px;
+    width: 100%;
+}
+/*.thums-masonry > img{*/
+.modulo4-masonry > div:first-child > img{
+    height: 100%;
+    width: 100%;
+}
+
+.modulo4-masonry > div:last-child {
+    display: none;
 }
 
 /*contenido bxslider*/

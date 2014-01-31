@@ -30,9 +30,6 @@ get_header(); ?>
                                 <div class="hTop">
                                     <span class="name">@<?php the_author();?></span>
                                     <div class="redes">
-                                        <!--<a href="#" title="Rss"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.jpg" alt="Rss" /></a>
-                                        <a href="#" title="Facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.jpg" alt="Facebook" /></a>
-                                        <a href="#" title="Twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.jpg" alt="twitter" /></a>-->
 
                                         <?php
                                               $rss=get_cimyFieldValue(get_the_author_ID(), 'RSS');
@@ -50,7 +47,6 @@ get_header(); ?>
                                         <?php } ?>
                                     </div>
                                 </div>
-                                <!--<span class="date">Lunes 3, Diciembre.</span>-->
                                 <span class="date"><?php the_date('l j, F')?>.</span>
                             </div>
                             <div class="text">

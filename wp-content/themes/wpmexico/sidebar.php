@@ -22,41 +22,11 @@
             <?php suscribe_form();
 
             ?>
-            <!--<div class="formSub">
-                <div class="input"><input type="text" placeholder="Escribe aquí tu correo electrónico"/></div>
-                <div class="grupo-radio">
-                    <div><input type="radio" name="group1" value="Semanal"><label>Semanal</label></div>
-                    <div><input type="radio" name="group1" value="Quincenal"><label>Quincenal</label></div>
-                    <div><input type="radio" name="group1" value="Mensual"><label>Mensual</label></div>
-                </div>
-                <div class="send"><button type="submit">Suscribirme</button></div>
-            </div>
-            <div>
-
-            </div>-->
         </div>
         <div class="boxAside boxTemasImportantes">
             <?php if ( is_active_sidebar('sidebar-importantes') ) {
                 dynamic_sidebar('sidebar-importantes');
             } ?>
-
-            <!--<h3>Temas importantes</h3>
-            <ul>
-                <li><a href="#" title="">Educación en México</a></li>
-                <li><a href="#" title="">Innovación</a></li>
-                <li><a href="#" title="">Personaje de la semana</a></li>
-                <li><a href="#" title="">Fútbol mexicano</a></li>
-                <li><a href="#" title="">Turismo</a></li>
-                <li><a href="#" title="">Medio ambiente</a></li>
-                <li><a href="#" title="">Opiniones</a></li>
-                <li><a href="#" title="">Reforma energética</a></li>
-                <li><a href="#" title="">Peña Nieto</a></li>
-                <li><a href="#" title="">Leyes mexicanas</a></li>
-                <li><a href="#" title="">Sexo y estrés</a></li>
-                <li><a href="#" title="">Compras de fin de año</a></li>
-                <li><a href="#" title="">Entrevistas</a></li>
-                <li><a href="#" title="">Teléfonos inteligentes</a></li>
-            </ul>-->
         </div>
         <div class="boxAside boxJournalRecomienda">
             <h3>Journal Recomienda</h3>
