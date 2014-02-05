@@ -53,7 +53,7 @@
       <file leaf-file-name="wp-config.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="2" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.476" vertical-offset="0" max-vertical-offset="1479">
+            <state line="19" column="2" selection-start="825" selection-end="825" vertical-scroll-proportion="0.204" vertical-offset="0" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
@@ -509,7 +509,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="2" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.476" vertical-offset="0" max-vertical-offset="1479">
+        <state line="19" column="2" selection-start="825" selection-end="825" vertical-scroll-proportion="0.204" vertical-offset="0" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>

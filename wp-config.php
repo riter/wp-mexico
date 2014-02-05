@@ -16,8 +16,8 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-//define('DB_NAME', 'validoc_testwordpress');
-define('DB_NAME', 'testwordpress');
+define('DB_NAME', 'validoc_testwordpress');
+//define('DB_NAME', 'testwordpress');
 
 /** Tu nombre de usuario de MySQL */
 define('DB_USER', 'validoc');
