@@ -112,4 +112,3 @@ function mostrar($destacados){
         //}
     endwhile;
 }
-
