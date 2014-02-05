@@ -546,3 +546,38 @@ function new_excerpt_more( $more ) {
     return '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Ver mas...</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+
+
+function ajax_page(){
+
+    if(isset($_POST['pagina'])){
+        $pagina=$_POST['pagina'];
+
+        $paged=$pagina;
+        $args=array(
+            'paged'=>$paged, //Pulls the paged function into the query
+            'posts_per_page'=>2, //Limits the amount of posts on each page
+            'post_type' => (get_query_var('post_type'))
+            );
+        query_posts($args);
+
+
+        while ( have_posts() ) : the_post();
+            get_template_part( 'content', get_post_format() );
+        endwhile;
+
+        //wp_reset_query();
+
+    }
+    die();
+}
+add_action('wp_ajax_page_callback', 'ajax_page');
+add_action('wp_ajax_nopriv_page_callback', 'ajax_page');
+
+/*function five_posts_on_homepage( $query ) {
+    if ( /*$query->is_home() &&*/ /*$query->is_main_query() ) {
+        $query->set( 'posts_per_page', 1 );
+    }
+}
+add_action( 'pre_get_posts', 'five_posts_on_homepage' );*/

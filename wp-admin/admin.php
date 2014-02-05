@@ -6,28 +6,28 @@
         display: inline-block;
         width: 31px;
         height: 64px;
-        background-position-y: 34;
+        background-position: 0 34px;
     }
     .modulo-2{
         background: url(../wp-admin/images/modulo_2.png) no-repeat;
         display: inline-block;
         width: 62px;
         height: 64px;
-        background-position-y: 34;
+        background-position: 0 34px;
     }
     .modulo-3{
         background: url(../wp-admin/images/modulo_3.png) no-repeat;
         display: inline-block;
         width: 31px;
         height: 64px;
-        background-position-y: 3;
+        background-position: 0 3px;
     }
     .modulo-4{
         background: url(../wp-admin/images/modulo_4.png) no-repeat;
         display: inline-block;
         width: 62px;
         height: 64px;
-        background-position-y: 3;
+        background-position:0 3px;
     }
 </style>
 

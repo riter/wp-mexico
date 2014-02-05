@@ -53,7 +53,7 @@ get_header();
                 <?php
 
                     //$sw=-1;
-                    query_posts(array('order'=> 'DESC'));
+                    //query_posts(array('order'=> 'DESC','posts_per_page'=>1));
 
                     // Start the Loop.
                     while ( have_posts() ) : the_post();
@@ -63,14 +63,7 @@ get_header();
                          * (where ___ is the post format) and that will be used instead.
                          */
                         if (! in_array(get_the_ID(), $destacados)) {
-
-                            ?>
-                            <!--<div class="item <?php echo $clase?>">
-                                <?php //get_template_part( 'content', get_post_format() );  ?>
-                            </div>-->
-                            <?php get_template_part( 'content', get_post_format() );  ?>
-
-                        <?php
+                            get_template_part( 'content', get_post_format() );
                         }
                     endwhile;
                     /*for($i=0; $i<3;$i++){
@@ -86,7 +79,11 @@ get_header();
                 endif;
                 ?>
             </div>
-        <!--</div>-->
+        <!--<div style="border: 1px solid red;">
+            <p><button id="append-button">Append new items</button></p>
+            <?php //twentyfourteen_paging_nav(); ?>
+        </div>-->
+
     </div>
 	<?php get_sidebar( 'content' );
         get_sidebar();

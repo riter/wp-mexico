@@ -41,6 +41,7 @@
 
     <!-- Masonry-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/wp/masonry.pkgd.min.js"></script>
+    <!--<script src="<?php echo get_template_directory_uri(); ?>/js/wp/jquery.infinitescroll.min.js"></script>-->
 
     <!-- PLUGIN BXSLIDER-->
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/plugins/bxslider/jquery.bxslider.min.js"></script>
@@ -50,6 +51,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
+    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/jquery.jscroll.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/wp/main.js"></script>
 
     <!-- MENU RESPONSIVO -->

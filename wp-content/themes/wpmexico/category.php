@@ -29,7 +29,7 @@ get_header(); ?>
 
                 <div id="masonry-index">
 			<?php
-                    //$sw=-1;
+
                     // Start the Loop.
                     while ( have_posts() ) : the_post();
                     /*
@@ -37,32 +37,27 @@ get_header(); ?>
                      * use this in a child theme, then include a file called called content-___.php
                      * (where ___ is the post format) and that will be used instead.
                      */
-                        /*$sw=($sw+1) % 6;
-                        if($sw>=2 && $sw<=3){
-                            $clase="contendV-mansonry";
-                        }else{
-                            $clase="contendH-mansonry";
-                        }*/
+
                         ?>
-                    <!--<div class="<?php echo $clase?>">
-                        <?php //get_template_part( 'content', get_post_format() );?>
-                    </div>-->
+
                         <?php get_template_part( 'content', get_post_format() );?>
 
             <?php
                     endwhile;
                     // Previous/next page navigation.
-                    //twentyfourteen_paging_nav();
 
 				else :
 					// If no content, include the "No posts found" template.
 					get_template_part( 'content', 'none' );
 
 				endif;
+
 			    ?>
                 </div>
             </div>
-		</div><!-- #content -->
+            <!--<p><button id="append-button">Append new items</button></p>
+            <?php //twentyfourteen_paging_nav();?>
+
         <?php
             get_sidebar( 'content' );
             get_sidebar();
