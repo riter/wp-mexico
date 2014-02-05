@@ -571,13 +571,12 @@ function ajax_page(){
 
     }
     die();
+    /*function five_posts_on_homepage( $query ) {
+        if ( /*$query->is_home() &&*/ /*$query->is_main_query() ) {
+            $query->set( 'posts_per_page', 1 );
+        }
+    }
+    add_action( 'pre_get_posts', 'five_posts_on_homepage' );*/
 }
 add_action('wp_ajax_page_callback', 'ajax_page');
 add_action('wp_ajax_nopriv_page_callback', 'ajax_page');
-
-/*function five_posts_on_homepage( $query ) {
-    if ( /*$query->is_home() &&*/ /*$query->is_main_query() ) {
-        $query->set( 'posts_per_page', 1 );
-    }
-}
-add_action( 'pre_get_posts', 'five_posts_on_homepage' );*/
