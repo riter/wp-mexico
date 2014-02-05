@@ -1,3 +1,4 @@
+
 <style>
 
     .modulo-1{
@@ -19,14 +20,14 @@
         display: inline-block;
         width: 31px;
         height: 64px;
-        background-position: 0 3px;
+        background-position: 3;
     }
     .modulo-4{
         background: url(../wp-admin/images/modulo_4.png) no-repeat;
         display: inline-block;
         width: 62px;
         height: 64px;
-        background-position:0 3px;
+        background-position-y: 3;
     }
 </style>
 
