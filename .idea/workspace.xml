@@ -59,19 +59,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wp-config.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="wp-config.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="43" selection-start="822" selection-end="822" vertical-scroll-proportion="-1.3076923" vertical-offset="51" max-vertical-offset="1479">
+            <state line="23" column="2" selection-start="931" selection-end="931" vertical-scroll-proportion="0.2284069" vertical-offset="51" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-admin/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="37" selection-start="305" selection-end="305" vertical-scroll-proportion="-0.42418426" vertical-offset="476" max-vertical-offset="5967">
+            <state line="38" column="43" selection-start="737" selection-end="737" vertical-scroll-proportion="-3.2692308" vertical-offset="476" max-vertical-offset="5967">
               <folding />
             </state>
           </provider>
@@ -110,8 +110,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/category.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/ag-custom-admin/plugin.php" />
-        <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-admin/admin.php" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
       </list>
     </option>
   </component>
@@ -371,7 +371,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -498,16 +498,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
+    <entry file="file://$PROJECT_DIR$/wp-admin/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="822" selection-end="822" vertical-scroll-proportion="-1.3076923" vertical-offset="51" max-vertical-offset="1479">
+        <state line="38" column="43" selection-start="737" selection-end="737" vertical-scroll-proportion="-3.2692308" vertical-offset="476" max-vertical-offset="5967">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/admin.php">
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="305" selection-end="305" vertical-scroll-proportion="-0.42418426" vertical-offset="476" max-vertical-offset="5967">
+        <state line="23" column="2" selection-start="931" selection-end="931" vertical-scroll-proportion="0.2284069" vertical-offset="51" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>
