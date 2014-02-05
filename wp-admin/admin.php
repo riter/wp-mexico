@@ -29,7 +29,6 @@
         background-position:0 3px;
     }
 </style>
-
 <?php
 /**
  * WordPress Administration Bootstrap
@@ -37,7 +36,6 @@
  * @package WordPress
  * @subpackage Administration
  */
-
 /**
  * In WordPress Administration Screens
  *
@@ -377,4 +375,3 @@ if ( ! empty( $_REQUEST['action'] ) ) {
 	 */
 	do_action( 'admin_action_' . $_REQUEST['action'] );
 }
-?>

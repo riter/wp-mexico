@@ -557,7 +557,7 @@ function ajax_page(){
             'paged'=>$paged, //Pulls the paged function into the query
             'posts_per_page'=>2, //Limits the amount of posts on each page
             'post_type' => (get_query_var('post_type'))
-            );
+        );
         query_posts($args);
 
 
