@@ -83,21 +83,3 @@ $(document).on("ready",function(){
     });*/
 
 });
-/*
-$.post(
-
-    "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
-    {
-        action: "page_callback",
-        pagina: pag
-
-    },function(response){
-
-        if(response!=''){
-            pag++;
-            var $boxes=$(response);
-            $container.append( $boxes ).masonry( 'appended', $boxes );
-        }
-        candado=true;
-    }
-);*/
