@@ -62,11 +62,11 @@
       <file leaf-file-name="plugin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/ag-custom-admin/plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="26" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.332" vertical-offset="939" max-vertical-offset="49300">
+            <state line="87" column="24" selection-start="3689" selection-end="3689" vertical-scroll-proportion="0.332" vertical-offset="939" max-vertical-offset="49300">
               <folding>
-                <marker date="1391626955697" expanded="false" signature="28532:28546" placeholder="..." />
-                <marker date="1391626955697" expanded="false" signature="82642:82654" placeholder="..." />
-                <marker date="1391626955697" expanded="false" signature="82666:82675" placeholder="..." />
+                <marker date="1391627062339" expanded="true" signature="28528:28542" placeholder="..." />
+                <marker date="1391627062339" expanded="true" signature="82638:82650" placeholder="..." />
+                <marker date="1391627062339" expanded="true" signature="82662:82671" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -514,11 +514,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/ag-custom-admin/plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="26" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.332" vertical-offset="939" max-vertical-offset="49300">
+        <state line="87" column="24" selection-start="3689" selection-end="3689" vertical-scroll-proportion="0.332" vertical-offset="939" max-vertical-offset="49300">
           <folding>
-            <marker date="1391626955697" expanded="false" signature="28532:28546" placeholder="..." />
-            <marker date="1391626955697" expanded="false" signature="82642:82654" placeholder="..." />
-            <marker date="1391626955697" expanded="false" signature="82666:82675" placeholder="..." />
+            <marker date="1391627062339" expanded="true" signature="28528:28542" placeholder="..." />
+            <marker date="1391627062339" expanded="true" signature="82638:82650" placeholder="..." />
+            <marker date="1391627062339" expanded="true" signature="82662:82671" placeholder="..." />
           </folding>
         </state>
       </provider>
