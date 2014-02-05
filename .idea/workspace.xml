@@ -50,11 +50,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wp-config.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wp-config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="2" selection-start="990" selection-end="990" vertical-scroll-proportion="0.42418426" vertical-offset="0" max-vertical-offset="1462">
+            <state line="16" column="65" selection-start="708" selection-end="708" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1462">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/ag-custom-admin/plugin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="26" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.332" vertical-offset="939" max-vertical-offset="49300">
+              <folding>
+                <marker date="1391626955697" expanded="false" signature="28532:28546" placeholder="..." />
+                <marker date="1391626955697" expanded="false" signature="82642:82654" placeholder="..." />
+                <marker date="1391626955697" expanded="false" signature="82666:82675" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/wp-admin/css/wp-admin.css" />
         <option value="$PROJECT_DIR$/wp-admin/post.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/tag.php" />
@@ -112,6 +124,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/category.php" />
         <option value="$PROJECT_DIR$/wp-admin/admin.php" />
         <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/ag-custom-admin/plugin.php" />
       </list>
     </option>
   </component>
@@ -294,6 +307,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ag-custom-admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -380,11 +415,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/inc/template-tags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="29" selection-start="1342" selection-end="1366" vertical-scroll-proportion="-10.461538" vertical-offset="357" max-vertical-offset="3536" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfourteen/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="748" />
@@ -477,8 +507,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="990" selection-end="990" vertical-scroll-proportion="0.42418426" vertical-offset="0" max-vertical-offset="1462">
+        <state line="16" column="65" selection-start="708" selection-end="708" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1462">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/ag-custom-admin/plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="26" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.332" vertical-offset="939" max-vertical-offset="49300">
+          <folding>
+            <marker date="1391626955697" expanded="false" signature="28532:28546" placeholder="..." />
+            <marker date="1391626955697" expanded="false" signature="82642:82654" placeholder="..." />
+            <marker date="1391626955697" expanded="false" signature="82666:82675" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

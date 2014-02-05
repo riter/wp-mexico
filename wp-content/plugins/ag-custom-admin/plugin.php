@@ -84,8 +84,8 @@ class AGCA{
 	}
 	
 	function agca_init_session(){
-		if (!session_id())
-		session_start();
+		/*if (!session_id())
+		session_start();*/
 	}
 	
 	function checkGET(){
