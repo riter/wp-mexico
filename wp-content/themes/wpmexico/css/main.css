@@ -415,14 +415,13 @@ footer .foot .bottom .right .section ul li a{
     position: fixed;
     margin-left: 15px;
     top: 62%;
+    z-index: 9999;
 }
 /*nuevos*/
 .autor > img{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    /*max-width: 95px;
-    max-height: 95px;*/
 }
 /* share plugin compartir*/
 .sthoverbuttons-pos-left {
@@ -431,7 +430,8 @@ footer .foot .bottom .right .section ul li a{
 
 /* Masonry*/
 #masonry-index {
-    margin: 15px auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #masonry-index > div {
     margin-bottom: 10px;

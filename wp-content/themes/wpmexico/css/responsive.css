@@ -113,6 +113,11 @@ img{
     .postRelacionados ul li {
         margin: 0 3.5% 0 0;
     }
+
+    .shareThis{
+        bottom:740px;
+    }
+
     /* FOOTER */
     footer .foot .bottom .right {
        display: none;
@@ -121,9 +126,6 @@ img{
     .descripcion-slider {
         display: none;
     }
-    /*.contendV-mansonry {
-        float: none;
-    }*/
 }
 
 /* Smartphones (portrait) (HASTA 568PX IPHONE 5 y tablet 7 pulgadas)----------- */
@@ -151,15 +153,8 @@ img{
         margin: 0px auto 30px;
     }
     .shareThis {
-        top: 58%;
+        bottom:240px;
     }
-    /*.contendH-mansonry {
-        height: 386px;
-        width: 180px;
-    }
-    .contendV-mansonry {
-        float: left;
-    }*/
 
 }
 /* Smartphones (landscape) (HASTA 480PX COLOR ROJO)----------- */
