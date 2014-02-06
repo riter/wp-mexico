@@ -1,0 +1,4 @@
+[25-Jan-2014 00:49:20] PHP Fatal error:  Call to undefined function  get_cimyfieldvalue() in /home2/validoc/public_html/wp.mexico/wp-content/themes/wpmexico/single.php on line 23
+[25-Jan-2014 00:49:35] PHP Fatal error:  Call to undefined function  get_cimyfieldvalue() in /home2/validoc/public_html/wp.mexico/wp-content/themes/wpmexico/single.php on line 23
+[25-Jan-2014 00:49:41] PHP Fatal error:  Call to undefined function  get_cimyfieldvalue() in /home2/validoc/public_html/wp.mexico/wp-content/themes/wpmexico/single.php on line 23
+[26-Jan-2014 17:05:26] PHP Fatal error:  Call to undefined function  suscribe_form() in /home2/validoc/public_html/wp.mexico/wp-content/themes/wpmexico/sidebar.php on line 22
