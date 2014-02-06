@@ -11,13 +11,13 @@ get_header(); ?>
 
     <section id="content" class="content">
         <div id="body">
-            <div class="postDetalle">
+            <!--<div class="postDetalle">-->
+            <div id="masonry-index">
 
 			<?php if ( have_posts() ) : ?>
 
-                <h2 class="title"><?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h2>
+                <!--<h2 class="title"><?php //printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?></h2>-->
 
-                <div id="masonry-index">
 				<?php
 					// Start the Loop.
                     //$sw=-1;
@@ -52,8 +52,8 @@ get_header(); ?>
 				endif;
 			?>
                 </div>
-            </div>
-		</div><!-- #content -->
+            <!--</div>-->
+		</div>
 
         <?php
         get_sidebar( 'content' );

@@ -37,13 +37,13 @@ get_header(); ?>
                                               $twitter=get_cimyFieldValue(get_the_author_ID(), 'TWITTER');
 
                                               if($rss!=null && $rss!=""){ ?>
-                                                <a href="<?php echo $rss; ?>" title="Rss"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.jpg" alt="Rss" /></a>
+                                                <a href="<?php echo $rss; ?>" title="Rss" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.jpg" alt="Rss" /></a>
                                         <?php }
                                             if($facebook!=null && $facebook!=""){ ?>
-                                                <a href="<?php echo $facebook; ?>" title="Facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.jpg" alt="Facebook" /></a>
+                                                <a href="<?php echo $facebook; ?>" title="Facebook" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.jpg" alt="Facebook" /></a>
                                         <?php }
                                             if($twitter!=null && $twitter!=""){  ?>
-                                                <a href="<?php echo $twitter; ?>" title="Twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.jpg" alt="twitter" /></a>
+                                                <a href="<?php echo $twitter; ?>" title="Twitter" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.jpg" alt="twitter" /></a>
                                         <?php } ?>
                                     </div>
                                 </div>

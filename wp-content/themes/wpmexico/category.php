@@ -13,11 +13,13 @@ get_header(); ?>
 
 	<section id="content" class="content">
 		<div id="body" >
-            <div class="postDetalle">
+            <!--<div class="postDetalle">-->
+
+            <div id="masonry-index">
 
 			<?php if ( have_posts() ) : ?>
 
-            <h2 class="title"><?php printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h2>
+            <!--<h2 class="title"><?php //printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h2>-->
 
             <?php
                 // Show an optional term description.
@@ -25,10 +27,6 @@ get_header(); ?>
                 if ( ! empty( $term_description ) ) :
                     printf( '<div class="taxonomy-description">%s</div>', $term_description );
                 endif;*/
-            ?>
-
-                <div id="masonry-index">
-			<?php
 
                     // Start the Loop.
                     while ( have_posts() ) : the_post();
@@ -51,7 +49,7 @@ get_header(); ?>
 
 			    ?>
                 </div>
-            </div>
+            <!--</div>-->
             <!--<p><button id="append-button">Append new items</button></p>-->
             <?php //twentyfourteen_paging_nav();?>
         </div>

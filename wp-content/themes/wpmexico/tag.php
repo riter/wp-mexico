@@ -15,11 +15,14 @@ get_header(); ?>
 
 	<section id="content" class="content">
         <div id="body" >
-            <div class="postDetalle">
+            <!--<div class="postDetalle">-->
+
+            <!--masonry -->
+            <div id="masonry-index">
 
 			<?php if ( have_posts() ) : ?>
 
-                <h2 class="title"><?php printf( __( 'Tag Archives: %s', 'twentyfourteen' ), single_tag_title( '', false ) ); ?></h2>
+                <!--<h2 class="title"><?php //printf( __( 'Tag Archives: %s', 'twentyfourteen' ), single_tag_title( '', false ) ); ?></h2>-->
 
 				<?php
 					// Show an optional term description.
@@ -27,11 +30,7 @@ get_header(); ?>
 					if ( ! empty( $term_description ) ) :
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;*/
-				?>
 
-            <!--masonry -->
-            <div id="masonry-index">
-                <?php
                     //$sw=-1;
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
@@ -64,8 +63,8 @@ get_header(); ?>
 
 				endif;
 			?>
-                </div>
             </div>
+            <!--</div>-->
         </div><!-- #content -->
 
         <?php

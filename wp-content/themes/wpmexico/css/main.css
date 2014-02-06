@@ -430,11 +430,11 @@ footer .foot .bottom .right .section ul li a{
 }
 
 /* Masonry*/
-#fit-width .masonry {
-    margin: 0 auto;
+#masonry-index {
+    margin: 15px auto;
 }
 #masonry-index > div {
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 /* Solo Texto*/
 .modulo1-masonry{

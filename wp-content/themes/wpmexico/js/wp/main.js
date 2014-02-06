@@ -21,7 +21,7 @@ $(document).on("ready",function(){
             columnWidth: 190,
             isAnimated: true,
             isFitWidth: true,
-            gutter: 3
+            gutter: 5
         });
 
     /*
