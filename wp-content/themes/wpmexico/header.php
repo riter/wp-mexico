@@ -84,10 +84,26 @@
 
 </head>
 
-<body <?php //body_class(); ?>>
-    <!--<div id="page" class="hfeed site">-->
+<body>
+
+    <?php
+          if(is_home()){
+              $tipo="home";
+              $id_tipo="";
+          }elseif(is_search()){
+              $id_tipo=get_search_query();
+              $tipo="search";
+
+          }else{
+              $post_typo= get_object_vars(get_queried_object());
+              $tipo=$post_typo["taxonomy"];
+              $id_tipo=$post_typo["term_id"];
+          }
+    ?>
+    <div style="display: none" id="scroller" data-tipo="<?php echo $tipo;?>" data-id="<?php echo $id_tipo;?>"></div>
 
     <header class="content">
+
         <div class="head">
             <section class="logo">
                 <a href="<?php echo get_site_url() ?>" title="Journal Mexico">
@@ -99,9 +115,8 @@
                     <?php
                         if( function_exists('cyclone_slider') ){
                             cyclone_slider('superbanner');
+                        }
                     ?>
-                    <!--<img src="<?php echo $url ?>" alt="super_banner"/>-->
-                    <?php } ?>
                 </div>
                 <div class="boxSearch">
                     <?php get_search_form(); ?>
@@ -122,12 +137,12 @@
                         );
                         $cant=0;
                         $categories = get_categories($arg);
-                        foreach($categories as $category) {
+                        foreach($categories as $category) :setup_postdata($category);
                             if(!$category->parent && $category->term_id!=19 && $category->term_id!=22) {  $cant=($cant % 11) + 1 ; ?>
                                 <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>"><?php echo $category->name ?></a></li>
                         <?php
                             }
-                        }
+                        endforeach;
                         ?>
                     </ul>
                 </nav>

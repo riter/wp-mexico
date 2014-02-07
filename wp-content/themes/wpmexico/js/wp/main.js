@@ -24,17 +24,23 @@ $(document).on("ready",function(){
             gutter: 5
         });
 
-    /*
+
     var pag=1;
 
     $('#append-button').click(function(){
 
+        var tipo = $("#scroller").attr("data-tipo");
+        var id_tipo=$("#scroller").attr("data-id");
+        console.log(tipo);
+        console.log(id_tipo);
         $.ajax({
             data: {
                 action: "page_callback",
+                id:id_tipo,
+                tipo:tipo,
                 pagina: pag
             },
-            url:   "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
+            url: "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
             type: "POST",
             async:false,
 
@@ -53,8 +59,8 @@ $(document).on("ready",function(){
         return false;
 
     });
-
-    $(window).scroll(function(){
+    $('#append-button').click();
+    /*$(window).scroll(function(){
         //if ($(window).scrollTop() == $(document).height() - $(window).height() -224){
         if ($(window).scrollTop() >= $(document).height() - $(window).height() -200){
 

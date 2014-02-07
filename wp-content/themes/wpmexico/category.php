@@ -37,7 +37,7 @@ get_header(); ?>
                      */
                         ?>
 
-                        <?php get_template_part( 'content', get_post_format() );?>
+                        <?php //get_template_part( 'content', get_post_format() );?>
             <?php
                     endwhile;
                     // Previous/next page navigation.
@@ -50,7 +50,7 @@ get_header(); ?>
 			    ?>
                 </div>
             <!--</div>-->
-            <!--<p><button id="append-button">Append new items</button></p>-->
+            <p><button id="append-button">Append new items</button></p>
             <?php //twentyfourteen_paging_nav();?>
         </div>
         <?php

@@ -47,10 +47,7 @@ get_header(); ?>
                             $clase="contendH-mansonry";
                         }*/
                         ?>
-                    <!--<div class="<?php echo $clase?>">
                         <?php //get_template_part( 'content', get_post_format() );?>
-                    </div>-->
-                        <?php get_template_part( 'content', get_post_format() );?>
 
             <?php
 					endwhile;
@@ -65,6 +62,7 @@ get_header(); ?>
 			?>
             </div>
             <!--</div>-->
+            <p><button id="append-button">Append new items</button></p>
         </div><!-- #content -->
 
         <?php

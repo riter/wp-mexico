@@ -551,30 +551,70 @@ function ajax_page(){
 
     if(isset($_POST['pagina'])){
         $pagina=$_POST['pagina'];
+        $id=$_POST['id'];
+        $tipo=$_POST['tipo'];
 
-        $paged=$pagina;
         $args=array(
-            'paged'=>$paged, //Pulls the paged function into the query
-            'posts_per_page'=>2, //Limits the amount of posts on each page
-            'post_type' => (get_query_var('post_type'))
+            'paged'=>$pagina, //Pulls the paged function into the query
+            'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
+            'order'=> 'DESC',
+            'post_status'=> 'publish',
         );
-        query_posts($args);
+        switch($tipo){
+            case "category": $args['cat']=$id;
+                break;
+            case "post_tag": $args['tag_id']=$id;
+                break;
+            case "search": $args['s']=$id;
+                break;
+            case "home":
+                $args['cat']=$id;
+                break;
+        }
 
+        /*if($tipo=="category"){
+            $args=array(
+                'cat'=>$id,
+                'paged'=>$pagina, //Pulls the paged function into the query
+                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
+                'order'=> 'DESC',
+                'post_status'=> 'publish',
+            );
+        }elseif($tipo=="post_tag"){
+            $args=array(
+                'tag_id'=>$id,
+                'paged'=>$pagina, //Pulls the paged function into the query
+                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
+                'order'=> 'DESC',
+                'post_status'=> 'publish'
+            );
+        }elseif($tipo=="search"){
+            $args=array(
+                's'=>$id,
+                'paged'=>$pagina, //Pulls the paged function into the query
+                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
+                'order'=> 'DESC',
+                'post_status'=> 'publish'
+            );
+        }elseif($tipo=="home"){
+            $args=array(
+                'paged'=>$pagina, //Pulls the paged function into the query
+                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
+                'order'=> 'DESC',
+                'post_status'=> 'publish'
+            );
+        }*/
+
+
+        query_posts($args);
+        get_template_part( 'loop' );
 
         while ( have_posts() ) : the_post();
             get_template_part( 'content', get_post_format() );
         endwhile;
 
-        //wp_reset_query();
-
     }
     die();
-    /*function five_posts_on_homepage( $query ) {
-        if ( /*$query->is_home() &&*/ /*$query->is_main_query() ) {
-            $query->set( 'posts_per_page', 1 );
-        }
-    }
-    add_action( 'pre_get_posts', 'five_posts_on_homepage' );*/
 }
 add_action('wp_ajax_page_callback', 'ajax_page');
 add_action('wp_ajax_nopriv_page_callback', 'ajax_page');

@@ -62,9 +62,9 @@ get_header();
                          * use this in a child theme, then include a file called called content-___.php
                          * (where ___ is the post format) and that will be used instead.
                          */
-                        if (! in_array(get_the_ID(), $destacados)) {
+                        /*if (! in_array(get_the_ID(), $destacados)) {
                             get_template_part( 'content', get_post_format() );
-                        }
+                        }*/
                     endwhile;
                     /*for($i=0; $i<3;$i++){
                         mostrar($destacados);
@@ -80,10 +80,9 @@ get_header();
                 ?>
             </div>
         <!--<div style="border: 1px solid red;">
-            <p><button id="append-button">Append new items</button></p>
             <?php //twentyfourteen_paging_nav(); ?>
         </div>-->
-
+        <p><button id="append-button">Append new items</button></p>
     </div>
 	<?php get_sidebar( 'content' );
         get_sidebar();
