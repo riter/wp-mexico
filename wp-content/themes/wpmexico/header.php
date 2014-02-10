@@ -113,9 +113,10 @@
             <section class="rightHead">
                 <div class="bannerHead" id="super-banner">
                     <?php
-                        if( function_exists('cyclone_slider') ){
+                        /*if( function_exists('cyclone_slider') ){
                             cyclone_slider('superbanner');
-                        }
+                        }*/
+                    echo get_Banner('super');
                     ?>
                 </div>
                 <div class="boxSearch">

@@ -536,6 +536,23 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 	require get_template_directory() . '/inc/featured-content.php';
 }
 
+/* Funcion eliminar campos perfil*/
+function hide_personal_options(){
+    ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            var tabla=jQuery("#your-profile .form-table");
+            if(tabla.length > 0){
+                jQuery(tabla.first()).remove();
+                jQuery("tbody tr:nth-child(2)",tabla[2]).css("display","none");
+                jQuery("tbody tr:nth-child(1)",tabla[3]).css("display","none");
+            }
+        });
+    </script>
+<?php
+}
+add_action('admin_head','hide_personal_options');
+
 /* funciones main*/
 function custom_excerpt_length( $length ) {
     return 20;
@@ -571,40 +588,6 @@ function ajax_page(){
                 $args['cat']=$id;
                 break;
         }
-
-        /*if($tipo=="category"){
-            $args=array(
-                'cat'=>$id,
-                'paged'=>$pagina, //Pulls the paged function into the query
-                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
-                'order'=> 'DESC',
-                'post_status'=> 'publish',
-            );
-        }elseif($tipo=="post_tag"){
-            $args=array(
-                'tag_id'=>$id,
-                'paged'=>$pagina, //Pulls the paged function into the query
-                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
-                'order'=> 'DESC',
-                'post_status'=> 'publish'
-            );
-        }elseif($tipo=="search"){
-            $args=array(
-                's'=>$id,
-                'paged'=>$pagina, //Pulls the paged function into the query
-                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
-                'order'=> 'DESC',
-                'post_status'=> 'publish'
-            );
-        }elseif($tipo=="home"){
-            $args=array(
-                'paged'=>$pagina, //Pulls the paged function into the query
-                'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
-                'order'=> 'DESC',
-                'post_status'=> 'publish'
-            );
-        }*/
-
 
         query_posts($args);
         get_template_part( 'loop' );

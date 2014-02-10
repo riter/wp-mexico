@@ -12,15 +12,16 @@
     <aside>
         <div class="banner-1 boxAside banner">
             <?php
-                if( function_exists('cyclone_slider') )
-                    cyclone_slider('box-banner');
+                //if( function_exists('cyclone_slider') )
+                  //  cyclone_slider('box-banner');
+                echo get_Banner('box');
             ?>
+
             <!--<img src="<?php echo get_template_directory_uri(); ?>/images/boxBanner.png" alt=""/>-->
         </div>
         <div class="boxAside boxMantenteInformado">
             <h3>Mantente informado</h3>
             <?php suscribe_form();
-
             ?>
         </div>
         <div class="boxAside boxTemasImportantes">
@@ -47,8 +48,9 @@
         </div>
         <div class="banner-2 boxAside banner">
             <?php
-            if( function_exists('cyclone_slider') )
-                cyclone_slider('half-page');
+            //if( function_exists('cyclone_slider') )
+               // cyclone_slider('half-page');
+            echo get_Banner('half');
             ?>
             <!--<img src="<?php echo get_template_directory_uri(); ?>/images/half_header.png" alt="banner"/>-->
         </div>

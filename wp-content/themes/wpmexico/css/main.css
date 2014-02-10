@@ -433,8 +433,10 @@ footer .foot .bottom .right .section ul li a{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-#masonry-index > div {
-    margin-bottom: 10px;
+#masonry-index > .item-masonry {
+   margin-bottom: 5px;
+    /*margin: 6px;*/
+
 }
 /* Solo Texto*/
 .modulo1-masonry{
@@ -549,7 +551,7 @@ footer .foot .bottom .right .section ul li a{
 .modulo4-masonry > div:first-child {
     border-top-style: solid;
     border-top-width: 3px;
-    height: 387px;
+    height: 377px;
     width: 100%;
 }
 /*.thums-masonry > img{*/
