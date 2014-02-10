@@ -58,6 +58,42 @@ $(document).on("ready",function(){
         return false;
 
     });
-    $('#append-button').click();
+
+    function loadPages(){
+        var tipo = $("#scroller").attr("data-tipo");
+        var id_tipo=$("#scroller").attr("data-id");
+
+        $.ajax({
+            data: {
+                action: "page_callback",
+                id:id_tipo,
+                tipo:tipo,
+                pagina: pag
+            },
+            url: "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
+            type: "POST",
+            async:false,
+
+            beforeSend: function(){
+                //$("body").append('<div id="fancybox-loading"><div></div></div>');
+            },
+            success:  function (response) {
+                console.log(response);
+                if(response!=''){
+                    pag++;
+                    var $boxes=$(response);
+                    $container.append( $boxes ).masonry( 'appended', $boxes );
+                }
+            }
+        });
+    }
+
+    loadPages();
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= $(document).height() - $(window).height() -200){
+            loadPages()
+        }
+    });
 
 });

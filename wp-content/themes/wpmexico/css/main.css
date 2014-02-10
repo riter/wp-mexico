@@ -655,6 +655,6 @@ footer .foot .bottom .right .section ul li a{
 }
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     bottom: 13px !important;
-    width: 50% !important;
-    left: 40% !important;
+    width: 145px!important;
+    right: 27% !important;
 }

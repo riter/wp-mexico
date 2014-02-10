@@ -49,8 +49,8 @@ get_header(); ?>
 
 			    ?>
                 </div>
-            <!--</div>-->
-            <p><button id="append-button">Append new items</button></p>
+            <!--</div>
+            <p><button id="append-button">Append new items</button></p>-->
             <?php //twentyfourteen_paging_nav();?>
         </div>
         <?php

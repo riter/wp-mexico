@@ -61,8 +61,8 @@ get_header(); ?>
 				endif;
 			?>
             </div>
-            <!--</div>-->
-            <p><button id="append-button">Append new items</button></p>
+            <!--</div>
+            <p><button id="append-button">Append new items</button></p>-->
         </div><!-- #content -->
 
         <?php

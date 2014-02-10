@@ -81,8 +81,8 @@ get_header();
             </div>
         <!--<div style="border: 1px solid red;">
             <?php //twentyfourteen_paging_nav(); ?>
-        </div>-->
-        <p><button id="append-button">Append new items</button></p>
+        </div>
+        <p><button id="append-button">Append new items</button></p>-->
     </div>
 	<?php get_sidebar( 'content' );
         get_sidebar();
