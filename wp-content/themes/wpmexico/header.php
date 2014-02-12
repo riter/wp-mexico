@@ -86,22 +86,6 @@
 
 <body>
 
-    <?php
-          if(is_home()){
-              $tipo="home";
-              $id_tipo="";
-          }elseif(is_search()){
-              $id_tipo=get_search_query();
-              $tipo="search";
-
-          }else{
-              $post_typo= get_object_vars(get_queried_object());
-              $tipo=$post_typo["taxonomy"];
-              $id_tipo=$post_typo["term_id"];
-          }
-    ?>
-    <div style="display: none" id="scroller" data-tipo="<?php echo $tipo;?>" data-id="<?php echo $id_tipo;?>"></div>
-
     <header class="content">
 
         <div class="head">
