@@ -595,7 +595,7 @@ function getSliderHome(){
             </div>
             <div class="descripcion-slider">
                 <?php the_title( '<h2><a href="' . esc_url( get_permalink() ) . '" rel="">', '</a></h2>' );?>
-                <span><?php the_excerpt();?></span>
+                <!--<span><?php //the_excerpt();?></span>-->
             </div>
         </div>
     <?php

@@ -117,23 +117,27 @@ $(document).on("ready",function(){
         pag=1;
 
         loadClick(tipo,nombre);
-
-        /*$('.slider').bxSlider({
-            slideWidth: 780,
-            controls:false,
-            minSlides: 1,
-            maxSlides: 1,
-            slideMargin: 0
-        });*/
     });
 
     $(window).scroll(function(){
-        if ($(window).scrollTop() >= $(document).height() - $(window).height() -200){
+        if ($('#masonry-index').length > 0 && $(window).scrollTop() >= $(document).height() - $(window).height() -200){
             if(tipo=='home')
                 loadClick('scroll_home',nombre);
             else
                 loadClick(tipo,nombre);
         }
+
+        var posShare=$('#shareThis').offset();
+        var posAutor=$('.autor').offset();
+        var posFooter=$('footer').offset();
+
+        if( posShare['top']<= ( posAutor['top'] + $('.autor').height())
+            || (posShare['top'] + $('#shareThis').height() >= posFooter['top']) ){
+            $('#shareThis').css('opacity','0');
+        }else{
+            $('#shareThis').css('opacity','1');
+        }
+
     });
 
     if($('#masonry-index').length>0){

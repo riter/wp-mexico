@@ -414,8 +414,11 @@ footer .foot .bottom .right .section ul li a{
     cursor: pointer;
     position: fixed;
     margin-left: 15px;
-    top: 62%;
+    /*top: 62%;*/
     z-index: 9999;
+}
+.static-share{
+    position: static !important;
 }
 /*nuevos*/
 .autor > img{
