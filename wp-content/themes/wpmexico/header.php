@@ -110,33 +110,35 @@
         </div>
     </header>
     <div id="bottom">
-        <div class="content">
-            <section id="menu">
-                <nav>
-                    <ul>
-                        <?php
-                        $arg=array(
-                            'orderby'=> 'SLUG',
-                            'order'=> 'ASC',
-                            'hide_empty'=>'0'
-                        );
-                        $cant=0;
-                        $categories = get_categories($arg);
-                        foreach($categories as $category) :setup_postdata($category);
-                            if(!$category->parent && $category->term_id!=19 && $category->term_id!=22) {  $cant=($cant % 11) + 1 ; ?>
-                                <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>" data-category="<?php echo $category->term_id;?>"><?php echo $category->name ?></a></li>
-                        <?php
-                            }
-                        endforeach;
-                        ?>
-                    </ul>
-                </nav>
-            </section>
-            <section class="networks">
-                <a href="http://www.facebook.com/share.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/btnFacebook.jpg" alt="Facebook" /></a>
-                <a href="http://twitter.com/home?status=Currently%20reading%20<?php the_permalink(); ?>" title="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/btnTwitter.jpg" alt="Twitter" /></a>
-                <a href="mailto:info@wp_mexico.com" title="email"><img src="<?php echo get_template_directory_uri(); ?>/images/btnEmail.jpg" alt="Email" /></a>
+        <div class="menu-fixed">
+            <div class="content">
+                <section id="menu">
+                    <nav>
+                        <ul>
+                            <?php
+                            $arg=array(
+                                'orderby'=> 'SLUG',
+                                'order'=> 'ASC',
+                                'hide_empty'=>'0'
+                            );
+                            $cant=0;
+                            $categories = get_categories($arg);
+                            foreach($categories as $category) :setup_postdata($category);
+                                if(!$category->parent && $category->term_id!=19 && $category->term_id!=22) {  $cant=($cant % 11) + 1 ; ?>
+                                    <li <?php echo get_query_var('cat')==$category->term_id?"class='active-".$cant."'":"" ?>><a href="<?php  echo get_category_link( $category->term_id ) ?>" class="<?php echo "hover-a".$cant?>" data-category="<?php echo $category->term_id;?>"><?php echo $category->name ?></a></li>
+                            <?php
+                                }
+                            endforeach;
+                            ?>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="networks">
+                    <a href="http://www.facebook.com/share.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="facebook"><img src="<?php echo get_template_directory_uri(); ?>/images/btnFacebook.jpg" alt="Facebook" /></a>
+                    <a href="http://twitter.com/home?status=Currently%20reading%20<?php the_permalink(); ?>" title="twitter"><img src="<?php echo get_template_directory_uri(); ?>/images/btnTwitter.jpg" alt="Twitter" /></a>
+                    <a href="mailto:info@wp_mexico.com" title="email"><img src="<?php echo get_template_directory_uri(); ?>/images/btnEmail.jpg" alt="Email" /></a>
 
-            </section>
+                </section>
+            </div>
         </div>
     </div>

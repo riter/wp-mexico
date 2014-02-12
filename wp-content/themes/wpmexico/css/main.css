@@ -55,8 +55,15 @@ header .head .rightHead .boxSearch button{
 }
 #bottom{
     background-color: #FFFFFF;
+    height: 34px;
+    /*padding: 10px 0 0;*/
+}
+#bottom .menu-fixed{
     height: 24px;
+    width: 100%;
+    background: #FFF;
     padding: 10px 0 0;
+    z-index: 9999;
 }
 #bottom #menu{
 
@@ -675,4 +682,289 @@ footer .foot .bottom .right .section ul li a{
     bottom: 13px !important;
     width: 145px!important;
     right: 27% !important;
+}
+
+/*edgar*/
+.menu-fijo {
+    position: fixed !important;
+    top: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-alto {
+    height: 24px;
+}
+.publicidad{
+    overflow: hidden;
+    padding: 85px 160px 0 50px;
+}
+
+.publicidad h2{
+    border-bottom: 1px solid #838383;
+    color: #838383;
+    font-size: 35px;
+    line-height: 56px;
+    margin: 0 0 13px;
+    padding: 0 0 35px;
+}
+
+.publicidad p{
+    color: #848484;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.publicidad ul.formatos{
+    margin: 0 0 10px;
+    padding: 0;
+}
+.publicidad ul.formatos li{
+    display: inline-block;
+    margin: 0 18px 16px 0;
+}
+
+.publicidad ul.formatos li a{
+    background-color: #00ad25;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: #FFF;
+    display: block;
+    font-size: 18px;
+    height: 41px;
+    line-height: 41px;
+    min-width: 163px;
+    padding: 0 10px;
+    text-align: center;
+}
+/*--------------------- Publicidad Fin --------------------------*/
+
+/*------------------------ Boletin ---------------------------*/
+
+.boletin{
+    overflow: hidden;
+    padding: 85px 205px 0 50px;
+}
+
+.boletin h2{
+    border-bottom: 1px solid #838383;
+    color: #838383;
+    font-size: 35px;
+    line-height: 56px;
+    margin: 0 0 13px;
+    padding: 0 0 35px;
+}
+
+.boletin p{
+    color: #848484;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.boletin form ul{
+    margin: 0 0 10px;
+    padding: 0;
+    position: relative;
+    width: 475px;
+}
+
+.boletin form ul li{
+    margin: 0 0 18px 0;
+}
+
+.boletin form ul li:nth-child(-n+2) label{
+    color: #848484;
+    display: block;
+    font-size: 18px;
+    padding: 0 0 10px;
+}
+
+.boletin form ul li:nth-child(n+3) label{
+    color: #848484;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.boletin form ul li input[type=radio]{
+    margin: 0 10px 0 0;
+
+}
+
+.boletin form ul li input[type=submit]{
+    background-color: #00ad25;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 41px;
+    line-height: 41px;
+    min-width: 163px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.boletin form ul li input[type=text]{
+    border: 1px solid #898989;
+    font-size: 18px;
+    height: 37px;
+    width: 456px;
+}
+
+.boletin form ul li.last{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+/*------------------------ Boletin Fin --------------------------*/
+
+/*------------------------ Contacto ---------------------------*/
+.contacto{
+    overflow: hidden;
+
+    padding: 85px 0px 0 50px;
+}
+
+.contacto h2{
+    border-bottom: 1px solid #838383;
+    color: #838383;
+    font-size: 35px;
+    line-height: 56px;
+
+    margin: 0 0 60px;
+    padding: 0 0 35px;
+}
+
+.contacto .box-contacto p{
+    color: #848484;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.contacto .box-contacto form{
+
+    float: left;
+
+    margin: 0 36px 0 0;
+    width: 460px;
+}
+
+.contacto .box-contacto form ul{
+    margin: 0 0 10px;
+    padding: 0;
+    position: relative;
+    width: 475px;
+}
+
+.contacto .box-contacto form ul li{
+    margin: 0 0 18px 0;
+}
+
+.contacto .box-contacto form ul li:nth-child(-n+4) label{
+    color: #848484;
+    display: block;
+    font-size: 18px;
+    padding: 0 0 10px;
+}
+
+.contacto .box-contacto form ul li:nth-last-child(2) label{
+    color: #848484;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.contacto .box-contacto form ul li input[type=radio]{
+    margin: 0 10px 0 0;
+}
+
+.contacto .box-contacto form ul li input[type=submit]{
+    background-color: #00ad25;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    height: 41px;
+    line-height: 41px;
+    min-width: 163px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.contacto .box-contacto form ul li input[type=text]{
+    border: 1px solid #898989;
+    font-size: 18px;
+    height: 37px;
+    width: 456px;
+}
+
+.contacto .box-contacto form ul li textarea{
+    border: 1px solid #898989;
+    font-size: 18px;
+    height: 208px;
+    width: 456px;
+}
+.contacto .box-contacto form ul li.last{
+    position: absolute;
+    bottom: -17px;
+    right: 0;
+    margin: 0;
+}
+
+.contacto .box-contacto > ul{
+    border-left: 1px solid #898989;
+    float: left;
+    min-height: 400px;
+    padding: 0 0 0 20px;
+    width: 280px;
+
+}
+
+.contacto .box-contacto > ul li{
+    margin: 0 0 20px 0;
+}
+
+.contacto .box-contacto > ul li a{
+    background: url('../images/social.png') no-repeat;
+    color: #848484;
+    padding: 5px 0 5px 45px;
+}
+.contacto .box-contacto > ul li a.fb{
+    background-position: left top;
+    color: #848484;
+}
+.contacto .box-contacto > ul li a.tw{
+    background-position: left bottom;
+    color: #848484;
+}
+.contacto .box-contacto > ul li span{
+    color: #848484;
+    font-size: 18px;
+}
+/*------------------------ Contacto Fin --------------------------*/
+
+/*------------------------ Terminos --------------------------*/
+.terminos{
+    overflow: hidden;
+
+    padding: 85px 0px 0 50px;
+}
+
+.terminos h2{
+    border-bottom: 1px solid #838383;
+    color: #838383;
+    font-size: 35px;
+    line-height: 56px;
+
+    margin: 0 0 25px;
+    padding: 0 0 35px;
+}
+
+.terminos p{
+    color: #848484;
+    font-size: 18px;
+    margin: 0 0 25px 0;
 }

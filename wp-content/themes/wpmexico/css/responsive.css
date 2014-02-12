@@ -118,6 +118,65 @@ img{
         bottom:740px;
     }
 
+    /*------------------------ Publicidad ---------------------------*/
+
+
+
+    .publicidad{
+        padding: 20px 20px 0;
+    }
+    /*--------------------- Publicidad Fin --------------------------*/
+
+    /*------------------------ Boletin ---------------------------*/
+
+    .boletin{
+        padding: 20px 20px 0;
+    }
+    .boletin form ul{
+        margin: 0 0 50px;
+    }
+    .boletin form ul li{
+        margin: 0 0 18px 0;
+    }
+    /*------------------------ Boletin Fin --------------------------*/
+    /*------------------------ Contacto ---------------------------*/
+
+    .contacto{
+        padding: 20px 20px 0;
+    }
+    .contacto .box-contacto form{
+        float: none;
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+    .contacto .box-contacto form ul{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li{
+        margin: 0 0 18px 0;
+    }
+    .contacto .box-contacto form ul li input[type=text]{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li textarea{
+        height: 208px;
+        width: 100%;
+    }
+    .contacto .box-contacto > ul{
+        border-left: none;
+        float: none;
+        margin: 0 0 50px;
+        min-height: inherit;
+        padding: 0 ;
+        width: 100%;
+    }
+    /*------------------------ Contacto Fin --------------------------*/
+    /*------------------------ Terminos ---------------------------*/
+    .terminos{
+        padding: 20px 20px 0;
+    }
+    /*------------------------ Terminos Fin ---------------------------*/
+
     /* FOOTER */
     footer .foot .bottom .right {
        display: none;
@@ -155,6 +214,73 @@ img{
     .shareThis {
         bottom:240px;
     }
+    /*------------------------ Publicidad ---------------------------*/
+
+    .publicidad{
+        padding: 20px 20px 0;
+        text-align: center;
+    }
+    .publicidad ul.formatos li{
+        margin: 0 10px 16px 0;
+    }
+    .publicidad ul.formatos li a{
+        padding: 0;
+    }
+
+    /*--------------------- Publicidad Fin --------------------------*/
+
+    /*------------------------ Boletin ---------------------------*/
+
+    .boletin{
+        padding: 20px 20px 0;
+    }
+    .boletin form ul{
+        width: 100%;
+        margin: 0 0 50px;
+    }
+    .boletin form ul li{
+        margin: 0 0 18px 0;
+    }
+    .boletin form ul li input[type=text]{
+        width: 100%;
+    }
+    /*------------------------ Boletin Fin --------------------------*/
+    /*------------------------ Contacto ---------------------------*/
+
+    .contacto{
+        padding: 20px 20px 0;
+    }
+    .contacto .box-contacto form{
+        float: none;
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+    .contacto .box-contacto form ul{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li{
+        margin: 0 0 18px 0;
+    }
+    .contacto .box-contacto form ul li input[type=text]{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li textarea{
+        height: 208px;
+        width: 100%;
+    }
+    .contacto .box-contacto > ul{
+        border-left: none;
+        float: none;
+        min-height: inherit;
+        padding: 0 ;
+        width: 100%;
+    }
+    /*------------------------ Contacto Fin --------------------------*/
+    /*------------------------ Terminos ---------------------------*/
+    .terminos{
+        padding: 20px 20px 0;
+    }
+    /*------------------------ Terminos Fin ---------------------------*/
 
 }
 /* Smartphones (landscape) (HASTA 480PX COLOR ROJO)----------- */
@@ -169,6 +295,86 @@ img{
         font-size: 42px;
         line-height: 48px;
     }
+    /*------------------------ Terminos ---------------------------*/
+    .terminos{
+        padding: 20px 20px 0;
+    }
+    /*------------------------ Terminos Fin ---------------------------*/
+    /*------------------------ Publicidad ---------------------------*/
+
+    .publicidad{
+        padding: 20px 20px 0;
+    }
+
+    .publicidad ul.formatos li{
+        margin: 0 0 16px 0;
+        width: 100%;
+
+    }
+    .publicidad ul.formatos li a{
+        padding: 0;
+        width: 100%;
+
+    }
+
+    /*--------------------- Publicidad Fin --------------------------*/
+    /*------------------------ Boletin ---------------------------*/
+
+    .boletin{
+        padding: 20px 20px 0;
+    }
+    .boletin form ul{
+        width: 100%;
+        margin: 0 0 40px;
+    }
+    .boletin form ul li{
+        margin: 0 0 18px 0;
+    }
+    .boletin form ul li.last{
+        position: static;
+    }
+    .boletin form ul li input[type=text]{
+        width: 100%;
+    }
+    /*------------------------ Boletin Fin --------------------------*/
+    /*------------------------ Contacto ---------------------------*/
+
+    .contacto{
+        padding: 20px 20px 0;
+    }
+    .contacto .box-contacto form{
+        float: none;
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+    .contacto .box-contacto form ul{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li{
+        margin: 0 0 18px 0;
+    }
+    .contacto .box-contacto form ul li input[type=submit]{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li input[type=text]{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li textarea{
+        height: 208px;
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li.last{
+        position: static;
+    }
+
+    .contacto .box-contacto > ul{
+        border-left: none;
+        float: none;
+        min-height: inherit;
+        padding: 0 ;
+        width: 100%;
+    }
+    /*------------------------ Contacto Fin --------------------------*/
 }
 
 /* Smartphones (portrait) (HASTA 320PX COLOR NEGRO)----------- */
@@ -185,4 +391,89 @@ img{
     .boxAside.banner{
         width: 100%;
     }
+    /*------------------------ Terminos ---------------------------*/
+    .terminos{
+        padding: 20px 20px 0;
+    }
+    /*------------------------ Terminos Fin ---------------------------*/
+
+    /*------------------------ Publicidad ---------------------------*/
+
+    .publicidad{
+        padding: 20px 20px 0;
+    }
+
+    .publicidad ul.formatos li{
+        margin: 0 0 16px 0;
+        width: 100%;
+
+    }
+    .publicidad ul.formatos li a{
+        padding: 0;
+        width: 100%;
+
+    }
+
+    /*--------------------- Publicidad Fin --------------------------*/
+
+    /*------------------------ Boletin ---------------------------*/
+
+    .boletin{
+        padding: 20px 20px 0;
+    }
+    .boletin form ul{
+        width: 100%;
+        margin: 0 0 40px;
+    }
+    .boletin form ul li{
+        margin: 0 0 18px 0;
+    }
+    .boletin form ul li.last{
+        position: static;
+    }
+    .boletin form ul li input[type=text]{
+        width: 100%;
+    }
+    .boletin form ul li input[type=submit] {
+        width: 100%;
+    }
+    /*------------------------ Boletin Fin --------------------------*/
+
+    /*------------------------ Contacto ---------------------------*/
+
+    .contacto{
+        padding: 20px 20px 0;
+    }
+    .contacto .box-contacto form{
+        float: none;
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+    .contacto .box-contacto form ul{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li{
+        margin: 0 0 18px 0;
+    }
+    .contacto .box-contacto form ul li input[type=submit]{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li input[type=text]{
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li textarea{
+        height: 208px;
+        width: 100%;
+    }
+    .contacto .box-contacto form ul li.last{
+        position: static;
+    }
+    .contacto .box-contacto > ul{
+        border-left: none;
+        float: none;
+        min-height: inherit;
+        padding: 0 ;
+        width: 100%;
+    }
+    /*------------------------ Contacto Fin --------------------------*/
 }
