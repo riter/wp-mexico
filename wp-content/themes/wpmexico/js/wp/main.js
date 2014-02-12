@@ -16,57 +16,69 @@ $(document).on("ready",function(){
     });
 
     var $container=$('#masonry-index');
-    $container.masonry({
+
+    function iniMasonry(){
+        $container.masonry({
             itemSelector:'.item-masonry',
-            columnWidth: 190,
-            isAnimated: true,
+            columnWidth: 5,
+            isAnimated: true
             //isFitWidth: true,
-            gutter: 5
+            //gutter: 5
         });
+    }
 
+    function destroyMasonry(){
+        var elems = $container.masonry('getItemElements');
+        $container.masonry( 'remove', elems );
+        iniMasonry();
+    }
 
-    var pag=1;
+    $("#menu ul.l_tinynav1 li a, .foot .right .section a").on('click',function(event){
+        if($("#scroller").attr("data-tipo")==''){
+            return true;
+        }
 
-    $('#append-button').click(function(){
+        event.preventDefault();
+        $(".bx-wrapper").remove();
+        $("#menu ul.l_tinynav1 li").removeClass();
 
-        var tipo = $("#scroller").attr("data-tipo");
-        var id_tipo=$("#scroller").attr("data-id");
+        id=$(this).attr('data-category');
+        tipo='category';
+        pag=1;
 
-        $.ajax({
-            data: {
-                action: "page_callback",
-                id:id_tipo,
-                tipo:tipo,
-                pagina: pag
-            },
-            url: "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
-            type: "POST",
-            async:false,
+        destroyMasonry();
+        loadPages(id,tipo);
 
-            beforeSend: function(){
-                //$("body").append('<div id="fancybox-loading"><div></div></div>');
-            },
-            success:  function (response) {
-                console.log(response);
-                if(response!=''){
-                    pag++;
-                    var $boxes=$(response);
-                    $container.append( $boxes ).masonry( 'appended', $boxes );
-                }
+        var position=0;
+        $("#menu ul.l_tinynav1 li a").each(function(){
+            position++;
+            if($(this).attr('data-category')==id){
+                $(this).parent().addClass("active-"+position);
             }
         });
-        return false;
-
     });
 
-    function loadPages(){
-        var tipo = $("#scroller").attr("data-tipo");
+    function loadScroll(){
+        var tipo_pag = $("#scroller").attr("data-tipo");
         var id_tipo=$("#scroller").attr("data-id");
+        //if(tipo_pag=='home' || tipo_pag == 'search' || tipo_pag=='post_tag'){
+            id=id_tipo;
+            tipo=tipo_pag;
+            iniMasonry();
+            loadPages(id,tipo);
+        //}
+    }
+
+    var pag=1;
+    var id=-1;
+    var tipo="";
+
+    function loadPages(id,tipo){
 
         $.ajax({
             data: {
                 action: "page_callback",
-                id:id_tipo,
+                id:id,
                 tipo:tipo,
                 pagina: pag
             },
@@ -88,11 +100,13 @@ $(document).on("ready",function(){
         });
     }
 
-    loadPages();
+    loadScroll();
 
     $(window).scroll(function(){
         if ($(window).scrollTop() >= $(document).height() - $(window).height() -200){
-            loadPages()
+            if(id!=-1){
+                loadPages(id,tipo);
+            }
         }
     });
 
