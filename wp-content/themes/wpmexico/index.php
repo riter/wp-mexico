@@ -57,7 +57,7 @@ get_header();
                     //query_posts(array('order'=> 'DESC','posts_per_page'=>1));
 
                     // Start the Loop.
-                    while ( have_posts() ) : the_post();
+                    //while ( have_posts() ) : the_post();
                         /*
                          * Include the post format-specific template for the content. If you want to
                          * use this in a child theme, then include a file called called content-___.php
@@ -66,7 +66,7 @@ get_header();
                         /*if (! in_array(get_the_ID(), $destacados)) {
                             get_template_part( 'content', get_post_format() );
                         }*/
-                    endwhile;
+                   // endwhile;
                     /*for($i=0; $i<3;$i++){
                         mostrar($destacados);
                     }*/

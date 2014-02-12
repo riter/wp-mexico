@@ -564,44 +564,6 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-function ajax_page(){
-
-    if(isset($_POST['pagina'])){
-        $pagina=$_POST['pagina'];
-        $id=$_POST['id'];
-        $tipo=$_POST['tipo'];
-
-        $args=array(
-            'paged'=>$pagina, //Pulls the paged function into the query
-            'posts_per_page'=>get_option('posts_per_page'), //Limits the amount of posts on each page
-            'order'=> 'DESC',
-            'post_status'=> 'publish',
-        );
-        switch($tipo){
-            case "category": $args['cat']=$id;
-                break;
-            case "post_tag": $args['tag_id']=$id;
-                break;
-            case "search": $args['s']=$id;
-                break;
-            case "home":
-                $args['cat']=$id;
-                break;
-        }
-
-        query_posts($args);
-        get_template_part( 'loop' );
-
-        while ( have_posts() ) : the_post();
-            get_template_part( 'content', get_post_format() );
-        endwhile;
-
-    }
-    die();
-}
-add_action('wp_ajax_page_callback', 'ajax_page');
-add_action('wp_ajax_nopriv_page_callback', 'ajax_page');
-
 /* ajax para cargar post*/
 function get_tag_ID($tag_name) {
     $tag = get_term_by('name', $tag_name, 'post_tag');
@@ -613,15 +575,18 @@ function get_tag_ID($tag_name) {
 }
 
 function getSliderHome(){
-    //$destacados=array();
 
     global $post;
-    $args = array( 'cat' => '22','order'=> 'DESC','posts_per_page'=>3);
+    $args = array(  'cat' => 22,
+                    'order'=> 'DESC',
+                    'posts_per_page'=>3,
+                    'post_status'=>'publish'
+    );
     $myposts = get_posts( $args );
 
     echo "<div class='contend_slider slider item-masonry'>";
 
-    foreach( $myposts as $post ) :  setup_postdata($post); //$destacados[]= get_the_ID()?>
+    foreach( $myposts as $post ) :  setup_postdata($post); ?>
         <div>
             <div class="img-slider">
                 <a href="<?php  echo esc_url( get_permalink() );?>">
@@ -635,6 +600,7 @@ function getSliderHome(){
         </div>
     <?php
     endforeach;
+    echo "</div>";
     ?>
     <script>
         $('.slider').bxSlider({
@@ -646,14 +612,12 @@ function getSliderHome(){
         });
     </script>
 <?php
-    echo "</div>";
 }
 
 function ajax_get_page(){
 
     if(isset($_POST['pagina'])){
         $pagina=$_POST['pagina'];
-        $id=$_POST['id'];
         $tipo=$_POST['tipo'];
         $nombre=$_POST['nombre'];
 
