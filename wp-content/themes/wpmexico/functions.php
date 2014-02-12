@@ -674,6 +674,9 @@ function ajax_get_page(){
                 getSliderHome();
                 $args['cat']=$nombre;
                 break;
+            case "scroll_home":
+                $args['cat']=$nombre;
+                break;
         }
 
         query_posts($args);
