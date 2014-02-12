@@ -21,8 +21,8 @@ get_header();
     <div id="body">
         <!--<div class="postDetalle">-->
             <!--<h2 class='title'>No se encontro nada</h2>-->
-
-                <?php
+            <div id="masonry-index">
+            <!--    <?php
                 if ( have_posts() ) :
                     $destacados=array();
 
@@ -30,7 +30,7 @@ get_header();
                     $args = array( 'cat' => '22','order'=> 'DESC','posts_per_page'=>3);
                     $myposts = get_posts( $args );
 
-                    echo "<div class='contend_slider slider'>";
+                    echo "<div class='contend_slider slider item-masonry'>";
 
                     foreach( $myposts as $post ) :  setup_postdata($post); $destacados[]= get_the_ID()?>
                         <div>
@@ -48,8 +48,9 @@ get_header();
                     endforeach;
                     echo "</div>";
                     ?>
+                    -->
             <!--masonry -->
-            <div id="masonry-index">
+
                 <?php
 
                     //$sw=-1;
