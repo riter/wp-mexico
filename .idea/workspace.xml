@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="549" column="13" selection-start="10978" selection-end="10978" vertical-scroll-proportion="0.0" vertical-offset="9079" max-vertical-offset="11560">
+            <state line="511" column="14" selection-start="10222" selection-end="10222" vertical-scroll-proportion="0.48392856" vertical-offset="8416" max-vertical-offset="11560">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.2284069" vertical-offset="1224" max-vertical-offset="2329">
+            <state line="103" column="22" selection-start="3917" selection-end="3917" vertical-scroll-proportion="-13.730769" vertical-offset="1224" max-vertical-offset="2329">
               <folding />
             </state>
           </provider>
@@ -108,12 +108,12 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/tag.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/category.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/main.js" />
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
       </list>
     </option>
   </component>
@@ -485,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="549" column="13" selection-start="10978" selection-end="10978" vertical-scroll-proportion="0.0" vertical-offset="9079" max-vertical-offset="11560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="12" selection-start="708" selection-end="712" vertical-scroll-proportion="-3.2307692" vertical-offset="103" max-vertical-offset="1462">
@@ -524,7 +517,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.2284069" vertical-offset="1224" max-vertical-offset="2329">
+        <state line="103" column="22" selection-start="3917" selection-end="3917" vertical-scroll-proportion="-13.730769" vertical-offset="1224" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="511" column="14" selection-start="10222" selection-end="10222" vertical-scroll-proportion="0.48392856" vertical-offset="8416" max-vertical-offset="11560">
           <folding />
         </state>
       </provider>
