@@ -31,28 +31,33 @@ $(document).on("ready",function(){
     }
 
     function loadClick(tipo,nombre){
-        $.ajax({
-            data: {
-                action: "get_page_callback",
-                nombre:nombre,
-                tipo:tipo,
-                pagina: pag
-            },
-            url: "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
-            type: "POST",
-            async:false,
-            beforeSend: function(){
-                //$("body").append('<div id="fancybox-loading"><div></div></div>');
-            },
-            success:  function (response) {
-                console.log(response);
-                if(response!=''){
-                    pag++;
-                    var $boxes=$(response);
-                    $container.append( $boxes ).masonry( 'appended', $boxes );
+        if(pag!=-1){
+            $.ajax({
+                data: {
+                    action: "get_page_callback",
+                    nombre:nombre,
+                    tipo:tipo,
+                    pagina: pag
+                },
+                url: "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
+                type: "POST",
+                async:true,
+                beforeSend: function(){
+                    $("body").append('<div id="loading"></div>');
+                },
+                success:  function (response) {
+                    $('#loading').remove();
+                    console.log(response);
+                    if(response!=''){
+                        pag++;
+                        var $boxes=$(response);
+                        $container.append( $boxes ).masonry( 'appended', $boxes );
+                    }else{
+                        pag=-1;
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
     var pag=1;
@@ -72,11 +77,12 @@ $(document).on("ready",function(){
         loadClick(tipo,nombre);
 
         $("#menu ul.l_tinynav1 li").removeClass();
-        var position=0;
+        var idCat=$(this).attr('data-category');
+
         $("#menu ul.l_tinynav1 li a").each(function(){
-            position++;
-            if($(this).html().trim()==nombre){
-                $(this).parent().addClass("active-"+position);
+            console.log($(this).attr('data-category'));
+            if($(this).attr('data-category')==idCat){
+                $(this).parent().addClass("active-"+idCat);
             }
         });
     });
@@ -120,7 +126,7 @@ $(document).on("ready",function(){
     });
 
     $(window).scroll(function(){
-        if ($('#masonry-index').length > 0 && $(window).scrollTop() >= $(document).height() - $(window).height() -200){
+        if ($('#masonry-index').length > 0 && $(window).scrollTop() >= $(document).height() - $(window).height()){
             if(tipo=='home')
                 loadClick('scroll_home',nombre);
             else
