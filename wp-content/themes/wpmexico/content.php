@@ -16,7 +16,6 @@
           $color=  $cat['term_id'];
             break;
         }
-        //22 19
     }
 
     if(get_field("tipo_modulo")){

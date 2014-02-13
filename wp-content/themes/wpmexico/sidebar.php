@@ -46,15 +46,19 @@
                 <h4><a href="<?php echo $postsincat[0]->guid ?>" title="<?php echo $postsincat[0]->post_title?>"><?php echo $postsincat[0]->post_title?></a></h4>
             </section>
         </div>
-        <div class="banner-2 boxAside banner">
-            <?php
-            //if( function_exists('cyclone_slider') )
-               // cyclone_slider('half-page');
-            echo get_Banner('half');
-            ?>
-            <!--<img src="<?php echo get_template_directory_uri(); ?>/images/half_header.png" alt="banner"/>-->
-        </div>
 
+        <div class="banner-container">
+            <div class="banner-fixed">
+                <div class="banner-2 boxAside banner">
+                    <?php
+                    //if( function_exists('cyclone_slider') )
+                       // cyclone_slider('half-page');
+                    echo get_Banner('half');
+                    ?>
+                    <!--<img src="<?php echo get_template_directory_uri(); ?>/images/half_header.png" alt="banner"/>-->
+                </div>
+            </div>
+        </div>
         <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
         <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
             <?php dynamic_sidebar( 'sidebar-1' ); ?>

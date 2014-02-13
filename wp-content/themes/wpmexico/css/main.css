@@ -682,6 +682,19 @@ footer .foot .bottom .right .section ul li a{
     height: 32px;
     background: url(../images/bx_loader.gif) no-repeat;
 }
+/*banner*/
+.banner-container{
+    height: 600px;
+}
+.banner-fixed {
+    padding: 10px 0 0;
+    z-index: 9999;
+}
+.banner-fijo {
+    position: fixed !important;
+    top: 25px;
+}
+
 /*edgar*/
 .menu-fijo {
     position: fixed !important;
@@ -689,9 +702,6 @@ footer .foot .bottom .right .section ul li a{
     border-bottom: 1px solid #eee;
 }
 
-.menu-alto {
-    height: 24px;
-}
 .publicidad{
     overflow: hidden;
     padding: 85px 160px 0 50px;
