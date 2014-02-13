@@ -601,9 +601,9 @@ footer .foot .bottom .right .section ul li a{
     margin: 15px 0 17px 0;
     float: left;
     overflow: hidden;
-    border-top-color: #0000ff;
+    /*border-top-color: #0000ff;
     border-top-style: solid;
-    border-top-width: 3px;
+    border-top-width: 3px;*/
     background: #2d2d2d;
     padding: 0 15px;
 }
