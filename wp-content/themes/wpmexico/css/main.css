@@ -86,81 +86,71 @@ header .head .rightHead .boxSearch button{
     text-transform: uppercase;
 }
 /* Inicio menu active y hover*/
-#bottom #menu nav ul li.active-1 a{
-    border-bottom: 3px solid #378433;
+.active-1,a.cat-1:hover{
+    border-bottom: 3px solid #378433 ;
 }
-#bottom #menu nav ul li .hover-a1:hover{
-	border-bottom: 3px solid #378433;
+.color-1{
+    border-top: 3px solid #378433 ;
 }
-
-#bottom #menu nav ul li.active-2 a{
+.active-5,a.cat-5:hover,color-5{
     border-bottom: 3px solid #ffb400;
 }
-#bottom #menu nav ul li .hover-a2:hover{
-    border-bottom: 3px solid #ffb400;
+.color-5{
+    border-top: 3px solid #ffb400;
 }
-
-#bottom #menu nav ul li.active-3 a{
+.active-6,a.cat-6:hover{
     border-bottom: 3px solid #0084ff;
 }
-#bottom #menu nav ul li .hover-a3:hover{
-    border-bottom: 3px solid #0084ff;
+.color-6{
+    border-top: 3px solid #0084ff;
 }
-
-#bottom #menu nav ul li.active-4 a{
+.active-7,a.cat-7:hover{
     border-bottom: 3px solid #ff0000;
 }
-#bottom #menu nav ul li .hover-a4:hover{
-    border-bottom: 3px solid #ff0000;
+.color-7{
+    border-top: 3px solid #ff0000;
 }
-
-#bottom #menu nav ul li.active-5 a{
+.active-8,a.cat-8:hover{
     border-bottom: 3px solid #d803db;
 }
-#bottom #menu nav ul li .hover-a5:hover{
-    border-bottom: 3px solid #d803db;
+.color-8{
+    border-top: 3px solid #d803db;
 }
-
-#bottom #menu nav ul li.active-6 a{
+.active-9,a.cat-9:hover{
     border-bottom: 3px solid #2c03db;
 }
-#bottom #menu nav ul li .hover-a6:hover{
-    border-bottom: 3px solid #2c03db;
+.color-9{
+    border-top: 3px solid #2c03db;
 }
-
-#bottom #menu nav ul li.active-7 a{
+.active-10,a.cat-10:hover{
     border-bottom: 3px solid #00d200;
 }
-#bottom #menu nav ul li .hover-a7:hover{
-    border-bottom: 3px solid #00d200;
+.color-10{
+    border-top: 3px solid #00d200;
 }
-
-#bottom #menu nav ul li.active-8 a{
+.active-11,a.cat-11:hover{
     border-bottom: 3px solid #9f4b01;
 }
-#bottom #menu nav ul li .hover-a8:hover{
-    border-bottom: 3px solid #9f4b01;
+.color-11{
+    border-top: 3px solid #9f4b01;
 }
-
-#bottom #menu nav ul li.active-9 a{
+.active-12,a.cat-12:hover{
     border-bottom: 3px solid #949560;
 }
-#bottom #menu nav ul li .hover-a9:hover{
-    border-bottom: 3px solid #949560;
+.color-12{
+    border-top: 3px solid #949560;
 }
-
-#bottom #menu nav ul li.active-10 a{
+.active-13,a.cat-13:hover{
     border-bottom: 3px solid #cccccc;
 }
-#bottom #menu nav ul li .hover-a10:hover{
-    border-bottom: 3px solid #cccccc;
+.color-13{
+    border-top: 3px solid #cccccc;
 }
-
-#bottom #menu nav ul li.active-11 a{
-    border-bottom: 3px solid #fab1ff;
+.active-14,a.cat-14:hover{
+    border-top: 3px solid #fab1ff;
 }
-#bottom #menu nav ul li .hover-a11:hover{
-    border-bottom: 3px solid #fab1ff;
+.color-14{
+    border-top: 3px solid #fab1ff;
 }
 /* fin menu active y hover*/
 
@@ -611,9 +601,9 @@ footer .foot .bottom .right .section ul li a{
     margin: 15px 0 17px 0;
     float: left;
     overflow: hidden;
-    border-top-color: #0000ff;
+    /*border-top-color: #0000ff;
     border-top-style: solid;
-    border-top-width: 3px;
+    border-top-width: 3px;*/
     background: #2d2d2d;
     padding: 0 15px;
 }
@@ -683,7 +673,15 @@ footer .foot .bottom .right .section ul li a{
     width: 145px!important;
     right: 27% !important;
 }
-
+#loading{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 999999;
+    width: 32px;
+    height: 32px;
+    background: url(../images/bx_loader.gif) no-repeat;
+}
 /*edgar*/
 .menu-fijo {
     position: fixed !important;

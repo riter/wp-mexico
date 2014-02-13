@@ -575,7 +575,6 @@ function get_tag_ID($tag_name) {
 }
 
 function getSliderHome(){
-
     global $post;
     $args = array(  'cat' => 22,
                     'order'=> 'DESC',
@@ -586,7 +585,17 @@ function getSliderHome(){
 
     echo "<div class='contend_slider slider item-masonry'>";
 
-    foreach( $myposts as $post ) :  setup_postdata($post); ?>
+    foreach( $myposts as $post ) :  setup_postdata($post);
+        $listCat=get_the_category(get_the_ID());
+        foreach($listCat as $cat){
+            $cat=get_object_vars($cat);
+            if($cat['term_id'] != 22 && $cat['term_id']!=19){ //id diferente de id recomienda y destacado
+                $color=  $cat['term_id'];
+                break;
+            }
+        }
+
+        ?>
         <div>
             <div class="img-slider">
                 <a href="<?php  echo esc_url( get_permalink() );?>">
@@ -594,7 +603,7 @@ function getSliderHome(){
                     <?php //the_post_thumbnail()?>
                 </a>
             </div>
-            <div class="descripcion-slider">
+            <div class="descripcion-slider <?php echo "color-".$color;?>">
                 <?php the_title( '<h2><a href="' . esc_url( get_permalink() ) . '" rel="">', '</a></h2>' );?>
                 <!--<span><?php //the_excerpt();?></span>-->
             </div>
