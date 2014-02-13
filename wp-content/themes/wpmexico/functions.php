@@ -590,7 +590,8 @@ function getSliderHome(){
         <div>
             <div class="img-slider">
                 <a href="<?php  echo esc_url( get_permalink() );?>">
-                    <?php the_post_thumbnail()?>
+                    <img src="<?php echo get_field("url_imagen_post_recomendado"); ?>" alt="imagen_recomendada"/>
+                    <?php //the_post_thumbnail()?>
                 </a>
             </div>
             <div class="descripcion-slider">
