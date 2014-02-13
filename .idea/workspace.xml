@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="93" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.456" vertical-offset="282" max-vertical-offset="850">
+            <state line="37" column="60" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-8.115385" vertical-offset="282" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="589" column="13" selection-start="18050" selection-end="18050" vertical-scroll-proportion="-7.1923075" vertical-offset="9418" max-vertical-offset="10863">
+            <state line="592" column="74" selection-start="18231" selection-end="18231" vertical-scroll-proportion="0.476" vertical-offset="9418" max-vertical-offset="10863">
               <folding />
             </state>
           </provider>
@@ -537,16 +537,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="589" column="13" selection-start="18050" selection-end="18050" vertical-scroll-proportion="-7.1923075" vertical-offset="9418" max-vertical-offset="10863">
+        <state line="37" column="60" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-8.115385" vertical-offset="282" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="93" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.456" vertical-offset="282" max-vertical-offset="850">
+        <state line="592" column="74" selection-start="18231" selection-end="18231" vertical-scroll-proportion="0.476" vertical-offset="9418" max-vertical-offset="10863">
           <folding />
         </state>
       </provider>
