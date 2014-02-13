@@ -391,6 +391,14 @@ img{
     .boxAside.banner{
         width: 100%;
     }
+    .modulo4-masonry{
+        height: 390px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .img-slider {
+        width: 100%;
+    }
     /*------------------------ Terminos ---------------------------*/
     .terminos{
         padding: 20px 20px 0;
