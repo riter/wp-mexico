@@ -48,16 +48,6 @@ class banner_publicidad{
         //add_action( 'init', array( $this, 'init' ) );
     }
 
-    public function isExiste($nombre){
-        global $wpdb;
-        $res=$wpdb->get_results( "select * from wp_banner_script where nombre='".$nombre."'" );
-        if(isset($res['script'])){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
     public function getDato($nombre){
         global $wpdb;
         $res=$wpdb->get_results( "select script from wp_banner_script where nombre='".$nombre."'" );
@@ -79,16 +69,29 @@ class banner_publicidad{
                        );"
         );
 
-        /*if(! isExiste('half')) {
-            $wpdb->query( "INSERT INTO wp_banner_script VALUE (0,'half','')");
-        };
-        if(! $this->isExiste('box')) {
-            $wpdb->query( "INSERT INTO wp_banner_script VALUE (0,'box','')");
-        };
-        if(! $this->isExiste('super')) {
-            $wpdb->query( "INSERT INTO wp_banner_script VALUE (0,'super','')");
-        }*/
+        $wpdb->query(
+            "INSERT INTO wp_banner_script (id,nombre, script)
+                SELECT * FROM (SELECT 0, 'half', '') AS tmp
+                WHERE NOT EXISTS (
+                  SELECT nombre FROM wp_banner_script WHERE nombre = 'half'
+                ) LIMIT 1;"
+        );
 
+        $wpdb->query(
+            "INSERT INTO wp_banner_script (id,nombre, script)
+                SELECT * FROM (SELECT 0, 'box', '') AS tmp
+                WHERE NOT EXISTS (
+                  SELECT nombre FROM wp_banner_script WHERE nombre = 'box'
+                ) LIMIT 1;"
+        );
+
+        $wpdb->query(
+            "INSERT INTO wp_banner_script (id,nombre, script)
+                SELECT * FROM (SELECT 0, 'super', '') AS tmp
+                WHERE NOT EXISTS (
+                  SELECT nombre FROM wp_banner_script WHERE nombre = 'super'
+                ) LIMIT 1;"
+        );
     }
 
     public function add_admin_pages() {

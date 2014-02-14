@@ -665,3 +665,40 @@ function ajax_get_page(){
 }
 add_action('wp_ajax_get_page_callback', 'ajax_get_page');
 add_action('wp_ajax_nopriv_get_page_callback', 'ajax_get_page');
+
+function ajax_count_page(){
+
+    if(isset($_POST['tipo'])){
+        $tipo=$_POST['tipo'];
+        $nombre=$_POST['nombre'];
+
+        $args=array(
+            'order'=> 'DESC',
+            'post_status'=> 'publish',
+            'posts_per_page'=>'-1'
+        );
+        switch($tipo){
+            case "category": $args['cat']=get_cat_ID($nombre);
+                break;
+            case "post_tag": $args['tag_id']=get_tag_ID($nombre);
+                break;
+            case "search": $args['s']=$nombre;
+                break;
+            case "home":
+                $args['cat']=$nombre;
+                break;
+            case "scroll_home":
+                $args['cat']=$nombre;
+                break;
+        }
+
+        $cant_posts=query_posts($args);
+        $post_pag=get_option('posts_per_page');//post por pagina segun el admin
+
+        get_template_part( 'loop' );
+        echo intval(count($cant_posts) / $post_pag) + (($cant_posts % $post_pag) == 0?0:1);
+    }
+    die();
+}
+add_action('wp_ajax_count_page_callback', 'ajax_count_page');
+add_action('wp_ajax_nopriv_count_page_callback', 'ajax_count_page');

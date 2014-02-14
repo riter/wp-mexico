@@ -80,10 +80,13 @@ get_header();
                 endif;
                 ?>
             </div>
+            <div>
+                <p><button id="cargar-mas" style="display: none;">Ver mas</button></p>
+            </div>
         <!--<div style="border: 1px solid red;">
             <?php //twentyfourteen_paging_nav(); ?>
-        </div>
-        <p><button id="append-button">Append new items</button></p>-->
+        </div>-->
+
     </div>
 	<?php get_sidebar( 'content' );
         get_sidebar();
