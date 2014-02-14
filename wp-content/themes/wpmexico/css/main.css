@@ -147,7 +147,7 @@ header .head .rightHead .boxSearch button{
     border-top: 3px solid #cccccc;
 }
 .active-14,a.cat-14:hover{
-    border-top: 3px solid #fab1ff;
+    border-bottom: 3px solid #fab1ff;
 }
 .color-14{
     border-top: 3px solid #fab1ff;
@@ -812,7 +812,7 @@ footer .foot .bottom .right .section ul li a{
     text-align: center;
 }
 
-.boletin form ul li input[type=text]{
+.boletin form ul li input[type=text],.boletin form ul li input[type=email] {
     border: 1px solid #898989;
     font-size: 18px;
     height: 37px;
@@ -902,7 +902,8 @@ footer .foot .bottom .right .section ul li a{
     text-align: center;
 }
 
-.contacto .box-contacto form ul li input[type=text]{
+.contacto .box-contacto form ul li input[type=text],
+.contacto .box-contacto form ul li input[type=email]{
     border: 1px solid #898989;
     font-size: 18px;
     height: 37px;
@@ -957,8 +958,7 @@ footer .foot .bottom .right .section ul li a{
 /*------------------------ Terminos --------------------------*/
 .terminos{
     overflow: hidden;
-
-    padding: 85px 0px 0 50px;
+    padding: 85px 80px 0 50px;
 }
 
 .terminos h2{

@@ -9,6 +9,17 @@ License: Sin Licencia
 */
 require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
 
+function save_suscriptor(){
+    if($_SERVER['REQUEST_METHOD']=="POST"){
+        global $wpdb;
+
+        $res=$wpdb->get_results( "select email from wp_suscriptor where email='".$_REQUEST['email']."'" );
+        if($res==null){
+            $wpdb->query( "INSERT INTO wp_suscriptor VALUE (0,'".$_REQUEST['email']."','".$_REQUEST['group']."','0','".$_REQUEST['nombre']."')" );
+        }
+    }
+}
+
 function suscribe_form(){
 
     if($_SERVER['REQUEST_METHOD']=="POST"){
@@ -17,8 +28,6 @@ function suscribe_form(){
         $res=$wpdb->get_results( "select email from wp_suscriptor where email='".$_REQUEST['email']."'" );
         if($res==null){
             $wpdb->query( "INSERT INTO wp_suscriptor VALUE (0,'".$_REQUEST['email']."','".$_REQUEST['group']."','0')" );
-        }else{
-           // echo "Ud ya esta suscrito";
         }
     }
     ?>
@@ -50,7 +59,8 @@ class suscribe_options{
                         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                         email VARCHAR(100) NOT NULL,
                         grupo VARCHAR(20) NOT NULL,
-                        estado VARCHAR(1) NOT NULL
+                        estado VARCHAR(1) NOT NULL,
+                        nombre VARCHAR(100) NOT NULL
                        );"
         );
     }
