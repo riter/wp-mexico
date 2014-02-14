@@ -51,7 +51,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
-    <script src="<?php echo get_template_directory_uri(); ?>/js/wp/jquery.jscroll.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/wp/main.js"></script>
 
     <!-- MENU RESPONSIVO -->
@@ -85,6 +84,7 @@
 </head>
 
 <body>
+    <!--<div id="loading" style="display: none"></div>-->
 
     <header class="content">
 

@@ -29,9 +29,38 @@ $(document).on("ready",function(){
         }
         iniMasonry();
     }
+    /* caraga cantidad de post*/
+    function loadCountPage(){
+        $('#cargar-mas').hide();
 
+        $.ajax({
+            data: {
+                action: "count_page_callback",
+                tipo: tipo,
+                nombre:nombre
+            },
+            url: "http://wp.mexico.html5cooks.com/wp-admin/admin-ajax.php",
+            type: "POST",
+            async:false,
+            beforeSend: function(){
+            },
+            success:  function (response) {
+                console.log(response);
+                if(response!=''){
+                    cant_pag=parseInt(response);
+                }
+            },error:function(e){
+                //$('#loading').toggle();
+                console.log(e);
+                cant_pag=1;
+            }
+        });
+    }
+
+    /* carga mas post*/
     function loadClick(tipo,nombre){
-        if(pag!=-1){
+
+        if(pag <= cant_pag){
             $.ajax({
                 data: {
                     action: "get_page_callback",
@@ -44,17 +73,23 @@ $(document).on("ready",function(){
                 async:true,
                 beforeSend: function(){
                     $("body").append('<div id="loading"></div>');
+                    //$('#loading').toggle();
                 },
                 success:  function (response) {
                     $('#loading').remove();
+                    //$('#loading').toggle();
                     console.log(response);
                     if(response!=''){
                         pag++;
                         var $boxes=$(response);
                         $container.append( $boxes ).masonry( 'appended', $boxes );
-                    }else{
-                        pag=-1;
+
+                        /*controla si hasy mas paginas*/
+                        visibleLoadPage();
                     }
+                },error:function(){
+                    //$('#loading').toggle();
+                    $('#loading').remove();
                 }
             });
         }
@@ -63,6 +98,7 @@ $(document).on("ready",function(){
     var pag=1;
     var nombre='';
     var tipo="";
+    var cant_pag=1;
 
     $("#menu ul.l_tinynav1 li a").on('click',function(event){
         event.preventDefault();
@@ -74,6 +110,7 @@ $(document).on("ready",function(){
         tipo='category';
         pag=1;
 
+        loadCountPage();
         loadClick(tipo,nombre);
 
         $("#menu ul.l_tinynav1 li").removeClass();
@@ -90,9 +127,10 @@ $(document).on("ready",function(){
     $(".foot .right .section a").on('click',function(event){
         event.preventDefault();
         var idCat=$(this).attr('data-category');
-        $("html, body").animate({ scrollTop: 0 }, 1000,function(){
-            $("#menu ul.l_tinynav1 li a.cat-"+idCat).click();
-        });
+
+        $("#menu ul.l_tinynav1 li a.cat-"+idCat).click();
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+
     });
 
     $(".boxTemasImportantes ul li a,.postTagRelacionados ul li a").on('click',function(event){
@@ -104,6 +142,7 @@ $(document).on("ready",function(){
         tipo='post_tag';
         pag=1;
 
+        loadCountPage();
         loadClick(tipo,nombre);
     });
 
@@ -117,6 +156,7 @@ $(document).on("ready",function(){
         tipo='search';
         pag=1;
 
+        loadCountPage();
         loadClick(tipo,nombre);
     });
 
@@ -130,17 +170,19 @@ $(document).on("ready",function(){
         tipo='home';
         pag=1;
 
+        loadCountPage();
         loadClick(tipo,nombre);
     });
 
     $(window).scroll(function(){
-        if ($('#masonry-index').length > 0 && $(window).scrollTop() >= $(document).height() - $(window).height()){
+        /*if ($('#masonry-index').length > 0 && $(window).scrollTop() >= $(document).height() - $(window).height()){
             if(tipo=='home')
                 loadClick('scroll_home',nombre);
             else
                 loadClick(tipo,nombre);
-        }
+        }*/
 
+        /*control de shareThis no sobrepase footer y titulo*/
         if($('#shareThis').length > 0){
             var posShare=$('#shareThis').offset();
             var posAutor=$('.autor').offset();
@@ -171,6 +213,23 @@ $(document).on("ready",function(){
        $(".logo a").click();
     }
 
+    function visibleLoadPage(){
+        if(pag <= cant_pag){
+            $('#cargar-mas').show();
+            $('#cargar-mas').unbind('click');
+
+            /* es como un scroll infinito*/
+            $('#cargar-mas').click(function(){
+                if(tipo=='home')
+                    loadClick('scroll_home',nombre);
+                else
+                    loadClick(tipo,nombre);
+            });
+        }else{
+            $('#cargar-mas').hide();
+        }
+    }
+
     /* menu estatico menu*/
     function checkScroll (menu, menu_offset_top,clase) {
 
@@ -181,10 +240,12 @@ $(document).on("ready",function(){
             menu.removeClass(clase);
         }
     }
+
     $(window).bind('resize', function() {
         $(window).on('scroll',function(){
             checkScroll(menu,menu_offset,'menu-fijo');
             checkScroll(banner,banner_offset,'banner-fijo');
         });
     });
+
 });

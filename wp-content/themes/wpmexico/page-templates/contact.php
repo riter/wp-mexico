@@ -17,9 +17,6 @@
                 <div class="box-contacto">
                     <!--<form action="#" method="post">-->
                         <?php
-                        /*$page_data = get_page( get_the_ID() );
-                        $page_data->post_content;
-                        */
                           echo do_shortcode('[contact-form-7 id="576" title="Formulario de contacto 1"]');
                         ?>
                         <!--<ul>

@@ -31,6 +31,7 @@ global $wpdb;
 
     foreach ($suscriptores as $suscriptor){
         $contents.=$suscriptor->id.",";
+        $contents.=$suscriptor->nombre.",";
         $contents.=$suscriptor->email.",";
         $contents.=$suscriptor->grupo."\n";
         ;
