@@ -18,10 +18,10 @@
             <div class="bottom">
                 <div class="left">
                     <ul>
-                        <li><a href="#" title="Contacto">Contacto</a></li>
-                        <li><a href="#" title="Publicitate">Publicitate</a></li>
-                        <li><a href="#" title="Terminos de privacidad">Terminos de privacidad</a></li>
-                        <li><a href="#" title="Suscribete al boletin">Suscribete al boletin</a></li>
+                        <li><a href="<?php echo get_page_link(417)?>" title="Contacto">Contacto</a></li>
+                        <li><a href="<?php echo get_page_link(420)?>" title="Publicitate">Publicitate</a></li>
+                        <li><a href="<?php echo get_page_link(422)?>" title="Terminos de privacidad">Terminos de privacidad</a></li>
+                        <li><a href="<?php echo get_page_link(424)?>" title="Suscribete al boletin">Suscribete al boletin</a></li>
                     </ul>
                 </div>
                 <div class="right">

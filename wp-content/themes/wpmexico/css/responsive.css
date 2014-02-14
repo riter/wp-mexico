@@ -155,7 +155,8 @@ img{
     .contacto .box-contacto form ul li{
         margin: 0 0 18px 0;
     }
-    .contacto .box-contacto form ul li input[type=text]{
+    .contacto .box-contacto form ul li input[type=text],
+    .contacto .box-contacto form ul li input[type=email]{
         width: 100%;
     }
     .contacto .box-contacto form ul li textarea{
@@ -241,7 +242,8 @@ img{
     .boletin form ul li{
         margin: 0 0 18px 0;
     }
-    .boletin form ul li input[type=text]{
+    .boletin form ul li input[type=text],
+    .boletin form ul li input[type=email]{
         width: 100%;
     }
     /*------------------------ Boletin Fin --------------------------*/
