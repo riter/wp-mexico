@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="65" selection-start="840" selection-end="840" vertical-scroll-proportion="-4.576923" vertical-offset="119" max-vertical-offset="850">
+            <state line="22" column="65" selection-start="840" selection-end="840" vertical-scroll-proportion="0.2284069" vertical-offset="119" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="915" column="18" selection-start="17945" selection-end="17945" vertical-scroll-proportion="0.0" vertical-offset="15462" max-vertical-offset="16864">
               <folding />
             </state>
           </provider>
@@ -35,11 +44,10 @@
       <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="103" selection-start="650" selection-end="650" vertical-scroll-proportion="-7.8461537" vertical-offset="170" max-vertical-offset="918">
+            <state line="49" column="36" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-10.884615" vertical-offset="550" max-vertical-offset="1207">
               <folding>
                 <element signature="e#6#130#0" expanded="true" />
-                <element signature="e#429#546#0" expanded="true" />
-                <marker date="1392357269806" expanded="true" signature="709:1435" placeholder="..." />
+                <element signature="e#450#567#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,16 +67,16 @@
       <file leaf-file-name="sidebar.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="38" selection-start="2093" selection-end="2093" vertical-scroll-proportion="-10.230769" vertical-offset="550" max-vertical-offset="1156">
+            <state line="54" column="43" selection-start="2098" selection-end="2098" vertical-scroll-proportion="-14.153846" vertical-offset="448" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wp-config.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="2" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.42418426" vertical-offset="17" max-vertical-offset="1411">
+            <state line="138" column="107" selection-start="5959" selection-end="6037" vertical-scroll-proportion="-11.384615" vertical-offset="1880" max-vertical-offset="2380">
               <folding />
             </state>
           </provider>
@@ -103,12 +111,12 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/main.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/suscribete.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/suscribe-options/suscribe-options.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/responsive.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/Terminos.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/contact.php" />
         <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/contact.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php" />
       </list>
     </option>
   </component>
@@ -440,15 +448,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/publicate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="18" selection-start="964" selection-end="964" vertical-scroll-proportion="0.646" vertical-offset="153" max-vertical-offset="714">
-          <folding>
-            <element signature="e#6#132#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/js/wp/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="167" column="49" selection-start="4648" selection-end="4648" vertical-scroll-proportion="0.50278294" vertical-offset="2568" max-vertical-offset="3315">
@@ -500,20 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="40" selection-start="5306" selection-end="5306" vertical-scroll-proportion="0.5233645" vertical-offset="3885" max-vertical-offset="8398">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="814" column="40" selection-start="15984" selection-end="15984" vertical-scroll-proportion="0.4598131" vertical-offset="13592" max-vertical-offset="16711">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/Terminos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="34" selection-start="274" selection-end="274" vertical-scroll-proportion="0.19577736" vertical-offset="136" max-vertical-offset="799">
@@ -532,34 +517,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/sidebar.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="38" selection-start="2093" selection-end="2093" vertical-scroll-proportion="-10.230769" vertical-offset="550" max-vertical-offset="1156">
+        <state line="138" column="107" selection-start="5959" selection-end="6037" vertical-scroll-proportion="-11.384615" vertical-offset="1880" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="65" selection-start="840" selection-end="840" vertical-scroll-proportion="-4.576923" vertical-offset="119" max-vertical-offset="850">
+        <state line="22" column="2" selection-start="901" selection-end="901" vertical-scroll-proportion="0.272" vertical-offset="17" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="43" selection-start="2098" selection-end="2098" vertical-scroll-proportion="-14.153846" vertical-offset="448" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="22" selection-start="5726" selection-end="5726" vertical-scroll-proportion="0.29961088" vertical-offset="4300" max-vertical-offset="8398">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/page-templates/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="103" selection-start="650" selection-end="650" vertical-scroll-proportion="-7.8461537" vertical-offset="170" max-vertical-offset="918">
+        <state line="49" column="36" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-10.884615" vertical-offset="550" max-vertical-offset="1207">
           <folding>
             <element signature="e#6#130#0" expanded="true" />
-            <element signature="e#429#546#0" expanded="true" />
-            <marker date="1392357269806" expanded="true" signature="709:1435" placeholder="..." />
+            <element signature="e#450#567#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="2" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.42418426" vertical-offset="17" max-vertical-offset="1411">
+        <state line="915" column="18" selection-start="17945" selection-end="17945" vertical-scroll-proportion="0.0" vertical-offset="15462" max-vertical-offset="16864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wpmexico/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="65" selection-start="840" selection-end="840" vertical-scroll-proportion="0.2284069" vertical-offset="119" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
