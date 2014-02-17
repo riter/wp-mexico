@@ -80,9 +80,9 @@ get_header();
                 endif;
                 ?>
             </div>
-            <div>
+            <!--<div>
                 <p><button id="cargar-mas" style="display: none;">Ver mas</button></p>
-            </div>
+            </div>-->
         <!--<div style="border: 1px solid red;">
             <?php //twentyfourteen_paging_nav(); ?>
         </div>-->

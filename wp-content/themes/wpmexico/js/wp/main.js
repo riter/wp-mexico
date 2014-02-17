@@ -135,6 +135,7 @@ $(document).on("ready",function(){
 
     $(".boxTemasImportantes ul li a,.postTagRelacionados ul li a").on('click',function(event){
         event.preventDefault();
+        $("#menu ul.l_tinynav1 li").removeClass();
         $(".bx-wrapper").remove();
         setMasonry();
 
@@ -149,6 +150,7 @@ $(document).on("ready",function(){
     $(".boxSearch form").on('submit',function(event){
 
         event.preventDefault();
+        $("#menu ul.l_tinynav1 li").removeClass();
         $(".bx-wrapper").remove();
         setMasonry();
 
@@ -163,6 +165,7 @@ $(document).on("ready",function(){
     $(".logo a").on('click',function(event){
 
         event.preventDefault();
+        $("#menu ul.l_tinynav1 li").removeClass();
         $(".bx-wrapper").remove();
         setMasonry();
 
@@ -215,6 +218,7 @@ $(document).on("ready",function(){
 
     function visibleLoadPage(){
         if(pag <= cant_pag){
+            $("#body").append("<div><p><button id='cargar-mas' style='display: none;'>Ver mas</button></p></div>");
             $('#cargar-mas').show();
             $('#cargar-mas').unbind('click');
 
